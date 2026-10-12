@@ -1,63 +1,127 @@
 {
   "projects": {
     "https://github.com/apache/kafka/releases.atom": {
-      "last_seen": "tag:github.com,2008:Repository/2211243/4.4.0-rc3",
-      "checked_at": "2026-10-05T16:55:05.665Z"
+      "last_seen": "tag:github.com,2008:Repository/2211243/4.3.2-rc3",
+      "checked_at": "2026-10-12T17:30:41.231Z"
     },
     "redpanda-data/kminion": {
       "last_seen": "v2.3.6",
-      "checked_at": "2026-10-05T16:55:06.050Z"
+      "checked_at": "2026-10-12T17:30:41.693Z"
     },
     "kubernetes/kubernetes": {
       "last_seen": "v1.37.1",
-      "checked_at": "2026-10-05T16:55:06.131Z"
+      "checked_at": "2026-10-12T17:30:41.780Z"
     },
     "helm/helm": {
       "last_seen": "v4.3.0",
-      "checked_at": "2026-10-05T16:55:06.276Z"
+      "checked_at": "2026-10-12T17:30:41.945Z"
     },
     "argoproj/argo-cd": {
-      "last_seen": "v3.5.3",
-      "checked_at": "2026-10-05T16:55:06.422Z"
+      "last_seen": "v3.5.5",
+      "checked_at": "2026-10-12T17:30:42.093Z"
     },
     "cert-manager/cert-manager": {
       "last_seen": "v1.21.2",
-      "checked_at": "2026-10-05T16:55:06.516Z"
+      "checked_at": "2026-10-12T17:30:42.191Z"
     },
     "kubernetes-sigs/external-dns": {
       "last_seen": "v0.23.0",
-      "checked_at": "2026-10-05T16:55:06.623Z"
+      "checked_at": "2026-10-12T17:30:42.283Z"
     },
     "prometheus/prometheus": {
       "last_seen": "v3.15.0",
-      "checked_at": "2026-10-05T16:55:06.789Z"
+      "checked_at": "2026-10-12T17:30:42.421Z"
     },
     "prometheus-operator/prometheus-operator": {
       "last_seen": "v0.94.1",
-      "checked_at": "2026-10-05T16:55:06.894Z"
+      "checked_at": "2026-10-12T17:30:42.564Z"
     },
     "kubernetes/kube-state-metrics": {
       "last_seen": "v2.20.0",
-      "checked_at": "2026-10-05T16:55:07.040Z"
+      "checked_at": "2026-10-12T17:30:42.689Z"
     },
     "thanos-io/thanos": {
       "last_seen": "v0.42.4",
-      "checked_at": "2026-10-05T16:55:07.148Z"
+      "checked_at": "2026-10-12T17:30:42.801Z"
     },
     "grafana/mimir": {
-      "last_seen": "mimir-3.2.1",
-      "checked_at": "2026-10-05T16:55:07.339Z"
+      "last_seen": "mimir-3.2.2",
+      "checked_at": "2026-10-12T17:30:43.009Z"
     },
     "grafana/grafana": {
-      "last_seen": "v13.2.2",
-      "checked_at": "2026-09-28T16:33:58.183Z"
+      "last_seen": "v13.2.3",
+      "checked_at": "2026-10-12T17:30:43.125Z"
     },
     "https://console.warpstream.com/agent-changelog.rss": {
-      "last_seen": "https://docs.warpstream.com/warpstream/overview/change-log#release-v847",
-      "checked_at": "2026-10-05T16:55:05.841Z"
+      "last_seen": "https://docs.warpstream.com/warpstream/overview/change-log#release-v849",
+      "checked_at": "2026-10-12T17:30:41.503Z"
     }
   },
   "feed_items": [
+    {
+      "title": "Weekly Digest — 2026-10-12",
+      "link": "https://rickyf115.github.io/oss-feed/",
+      "guid": "https://rickyf115.github.io/oss-feed/digest/2026-10-12",
+      "guidIsPermalink": false,
+      "pubDate": "Mon, 12 Oct 2026 17:30:43 GMT",
+      "description": "<h3>kubernetes</h3>\n<ul>\n  <li><a href=\"https://github.com/argoproj/argo-cd/releases/tag/v3.5.5\">ArgoCD v3.5.5</a></li>\n</ul>\n\n<h3>observability</h3>\n<ul>\n  <li><a href=\"https://github.com/grafana/mimir/releases/tag/mimir-3.2.2\">Grafana Mimir mimir-3.2.2</a></li>\n  <li><a href=\"https://github.com/grafana/grafana/releases/tag/v13.2.3\">Grafana v13.2.3</a></li>\n</ul>\n\n<h3>streaming</h3>\n<ul>\n  <li><a href=\"https://github.com/apache/kafka/releases/tag/4.3.2-rc3\">Apache Kafka — 4.3.2-rc3</a></li>\n  <li><a href=\"https://docs.warpstream.com/warpstream/overview/change-log#release-v849\">Warpstream Agent — WarpStream Agent v849</a></li>\n</ul>",
+      "tags": []
+    },
+    {
+      "title": "ArgoCD v3.5.5",
+      "link": "https://github.com/argoproj/argo-cd/releases/tag/v3.5.5",
+      "guid": "https://github.com/argoproj/argo-cd/releases/tag/v3.5.5",
+      "pubDate": "Mon, 12 Oct 2026 10:59:41 GMT",
+      "description": "<h2>Quick Start</h2>\n<h3>Non-HA:</h3>\n<pre><code>kubectl create namespace argocd\nkubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.5.5/manifests/install.yaml</code></pre>\n<h3>HA:</h3>\n<pre><code>kubectl create namespace argocd\nkubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.5.5/manifests/ha/install.yaml</code></pre>\n<h2>Release Signatures and Provenance</h2>\n<p>All Argo CD container images are signed by cosign.  A Provenance is generated for container images and CLI binaries which meet the SLSA Level 3 specifications. See the <a href=\"https://argo-cd.readthedocs.io/en/stable/operator-manual/signed-release-assets\">documentation</a> on how to verify.</p>\n<h2>Release Notes Blog Post</h2>\n<p>For a detailed breakdown of the key changes and improvements in this release, check out the <a href=\"https://blog.argoproj.io/argo-cd-v3-0-release-candidate-a0b933f4e58f\">official blog post</a></p>\n<h2>Upgrading</h2>\n<p>If upgrading from a different minor version, be sure to read the <a href=\"https://argo-cd.readthedocs.io/en/stable/operator-manual/upgrading/overview/\">upgrading</a> documentation.</p>\n<h2>Changelog</h2>\n<h3>Bug fixes</h3>\n<ul>\n<li>3295d0cede4438315f1f42b019f7d9197a236d80: fix(ci): use curl in kustomize checksum helper so Renovate can refresh checksums (cherry-pick #29938 for 3.5) (#30100) (@argo-cd-cherry-pick-bot[bot])</li>\n<li>a32fb960058cb1676615987058ff20aec5f99f81: fix(hydrator): retry notes push on cannot lock ref errors (cherry-pick #28469 for 3.5) (#29905) (@argo-cd-cherry-pick-bot[bot])</li>\n<li>f0f6bdea7090f2ab188ab3f379aa56ed2670be58: fix(reposerver): stale manifests and goroutine leak after CMP failure (#29870) (cherry-pick #29874 for 3.5) (#30140) (@argo-cd-cherry-pick-bot[bot])</li>\n<li>3d31f1a9bbef941f0149d3270d5fb3dcd93790fe: fix(server): fill event count and timestamps for events.k8s.io events (#30015) (cherry-pick #30017 for 3.5) (#30111) (@rickbrouwer)</li>\n<li>33a47a550daf4ae407baf04f678a4b5918cb8069: fix(ui): show enableOCI only for Helm  (cherry-pick #29974 for 3.5) (#30074) (@argo-cd-cherry-pick-bot[bot])</li>\n<li>a48be5aa0a2d89988be52bb817e7498f7c248947: fix: cache the OCI tag list (#30117) (cherry-pick #30118 for 3.5) (#30119) (@argo-cd-cherry-pick-bot[bot])</li>\n<li>ebf5ac7ff31f1dd6511cc0246e13da4de8125743: fix: correct scheduled-time format in CronWorkflow create-workflow action (#29915) (cherry-pick #29916 for 3.5) (#29953) (@argo-cd-cherry-pick-bot[bot])</li>\n<li>514141dab1058d72c4bfa4f0f08b63a0a6c1ad14: fix: fix escaped URL routing for write repo (creds) endpoints (cherry-pick #29940 for 3.5) (#29958) (@argo-cd-cherry-pick-bot[bot])</li>\n<li>4d2194b2b8114aa5eb39b41ae12e82676032aae4: fix: fix untar inbound check if dstPath is symlinked (cherry-pick #28881 release-3.5) (#30053) (@blakepettersson)</li>\n<li>4d68ee32ca16d0f8382bf88cd4adc3b6b3e09568: fix: fixes flaky tests by making Log capturer thread-safe (cherry-pick #28328 for 3.5) (#30078) (@argo-cd-cherry-pick-bot[bot])</li>\n<li>1d0585d9b5097822fd49d32ca05d818231d1b497: fix: synchronize OCI cache cleanup with extraction (#30020) (cherry-pick #30023 for 3.5) (#30103) (@argo-cd-cherry-pick-bot[bot])</li>\n</ul>\n<h3>Dependency updates</h3>\n<ul>\n<li>6b6f042ca2273444044a0b69a9b04ef06ed9b116: chore(deps): bump go-git dependency- #30013 for v3.5 (#30047) (@ranakan19)</li>\n<li>59e320ff6af81722a355975ea956c79385dce2ed: chore(deps): bump google.golang.org/grpc from 1.81.1 to 1.84.0 (cherry-pick release-3.5) (#30056) (@dipakkarde)</li>\n<li>d1b3091a834353fe71fe58b3137c979dd8554879: chore(deps): bump oras.land/oras-go/v2 from 2.6.1 to 2.6.2 (cherry-pick #28696 for 3.5) (#30057) (@argo-cd-cherry-pick-bot[bot])</li>\n<li>29f57d5d9b443d473fa699d3451981c63ba6e9a3: chore(deps): bump the golang-x group with 3 updates (#29705) (cherry-pick release-3.5) (#30072) (@blakepettersson)</li>\n<li>f89a094e6b92b3b83d47adc8f5edebd24302e118: chore(deps): update group golang to v1.26.9 (release-3.5) (#30092) (@argoproj-renovate[bot])</li>\n</ul>\n<p><strong>Full Changelog</strong>: <a href=\"https://github.com/argoproj/argo-cd/compare/v3.5.4...v3.5.5\">https://github.com/argoproj/argo-cd/compare/v3.5.4...v3.5.5</a></p>\n<p>&lt;a href=\"<a href=\"https://argoproj.github.io/cd/\">https://argoproj.github.io/cd/</a>\"&gt;&lt;img src=\"<a href=\"https://raw.githubusercontent.com/argoproj/argo-site/master/content/pages/cd/gitops-cd.png\">https://raw.githubusercontent.com/argoproj/argo-site/master/content/pages/cd/gitops-cd.png</a>\" width=\"25%\" &gt;&lt;/a&gt;</p>",
+      "tags": [
+        "kubernetes",
+        "gitops"
+      ]
+    },
+    {
+      "title": "Grafana Mimir mimir-3.2.2",
+      "link": "https://github.com/grafana/mimir/releases/tag/mimir-3.2.2",
+      "guid": "https://github.com/grafana/mimir/releases/tag/mimir-3.2.2",
+      "pubDate": "Wed, 07 Oct 2026 17:35:48 GMT",
+      "description": "<p>This release contains 3 PRs from 3 authors. Thank you!</p>\n<h1>Changelog</h1>\n<h2>3.2.2</h2>\n<h3>Grafana Mimir</h3>\n<ul>\n<li>[BUGFIX] Alertmanager: Fix an issue where configuration that referenced files could load local files. Resolves <code>CVE-2026-81938</code>. #16789</li>\n</ul>\n<h3>Mixin</h3>\n<h3>Jsonnet</h3>\n<h3>Documentation</h3>\n<h3>Tools</h3>\n<p><strong>All changes in this release</strong>: <a href=\"https://github.com/grafana/mimir/compare/mimir-3.2.1...mimir-3.2.2\">https://github.com/grafana/mimir/compare/mimir-3.2.1...mimir-3.2.2</a></p>",
+      "tags": [
+        "observability",
+        "metrics"
+      ]
+    },
+    {
+      "title": "Grafana v13.2.3",
+      "link": "https://github.com/grafana/grafana/releases/tag/v13.2.3",
+      "guid": "https://github.com/grafana/grafana/releases/tag/v13.2.3",
+      "pubDate": "Tue, 29 Sep 2026 09:02:18 GMT",
+      "description": "<p><a href=\"https://grafana.com/grafana/download/13.2.3\">Download page</a></p>\n<p><a href=\"https://grafana.com/docs/grafana/latest/whatsnew/\">What's new highlights</a></p>\n<h3>Security</h3>\n<ul>\n<li>Security: Fix CVE-2026-13719</li>\n<li>Security: Fix CVE-2026-13720</li>\n<li>Security: Fix CVE-2026-81841</li>\n</ul>",
+      "tags": [
+        "observability",
+        "dashboards"
+      ]
+    },
+    {
+      "title": "Apache Kafka — 4.3.2-rc3",
+      "link": "https://github.com/apache/kafka/releases/tag/4.3.2-rc3",
+      "guid": "tag:github.com,2008:Repository/2211243/4.3.2-rc3",
+      "pubDate": "Sun, 11 Oct 2026 02:31:51 GMT",
+      "description": "<p>4.3.2-rc3</p>",
+      "tags": [
+        "streaming",
+        "backend"
+      ]
+    },
+    {
+      "title": "Warpstream Agent — WarpStream Agent v849",
+      "link": "https://docs.warpstream.com/warpstream/overview/change-log#release-v849",
+      "guid": "https://docs.warpstream.com/warpstream/overview/change-log#release-v849",
+      "pubDate": "Fri, 09 Oct 2026 19:57:52 GMT",
+      "description": "<ul><li>Add `tls-disable-hostname-verification` flag to all `ws cli` subcommands that allows to disable hostname verification.</li><li>Schema Registry: Fix a formatting issue affecting Protobuf schemas containing both a reference and some `oneof` fields so their fields are sorted like the Confluent Schema Registry. Re-registering such a schema may create a new version and schema ID for it.</li><li>Schema Registry: Add native support for Confluent types `confluent/meta`, `confluent/variant`, `confluent/decimal` for protobuf schemas.</li><li>Fix the deadscanner reporting long-lived file rewrites as successful when finishing the upload failed, which could leave the file&#39;s modification time un-refreshed.</li></ul>",
+      "tags": [
+        "streaming",
+        "backend"
+      ]
+    },
     {
       "title": "Weekly Digest — 2026-10-05",
       "link": "https://rickyf115.github.io/oss-feed/",
@@ -1054,70 +1118,6 @@
       "tags": [
         "kubernetes",
         "packaging"
-      ]
-    },
-    {
-      "title": "kube-state-metrics v2.19.1",
-      "link": "https://github.com/kubernetes/kube-state-metrics/releases/tag/v2.19.1",
-      "guid": "https://github.com/kubernetes/kube-state-metrics/releases/tag/v2.19.1",
-      "pubDate": "Fri, 12 Jun 2026 05:38:26 GMT",
-      "description": "<h2>v2.19.1 / 2026-06-10</h2>\n<h3>Notes</h3>\n<ul>\n<li>This release builds with Go <code>v1.26.4</code></li>\n<li>This release builds with <code>k8s.io/client-go</code>: <code>v0.35.4</code></li>\n</ul>\n<h3>Changelog</h3>\n<ul>\n<li>[SECURITY] Upgrade Go toolchain to address CVE-2026-42504 (GO-2026-5038) by @slessard in <a href=\"https://github.com/kubernetes/kube-state-metrics/pull/2982\">#2982</a></li>\n<li>[SECURITY] Fix several high-scoring CVEs (golang.org/x/net, oauth2, sys, term, text) by @slessard in <a href=\"https://github.com/kubernetes/kube-state-metrics/pull/2981\">#2981</a></li>\n<li>[BUGFIX] Fix watch-list bookmarks with sharding (WatchListClient compatibility) by @jfremy-openai in <a href=\"https://github.com/kubernetes/kube-state-metrics/pull/2974\">#2974</a></li>\n<li>[BUGFIX] Don't panic on CronJobs with unparseable schedules by @atosatto in <a href=\"https://github.com/kubernetes/kube-state-metrics/pull/2978\">#2978</a></li>\n</ul>\n<p><strong>Full Changelog</strong>:</p>\n<p><a href=\"https://github.com/kubernetes/kube-state-metrics/compare/v2.19.0...v2.19.1\">https://github.com/kubernetes/kube-state-metrics/compare/v2.19.0...v2.19.1</a></p>",
-      "tags": [
-        "observability",
-        "kubernetes"
-      ]
-    },
-    {
-      "title": "Grafana Mimir mimir-3.1.1",
-      "link": "https://github.com/grafana/mimir/releases/tag/mimir-3.1.1",
-      "guid": "https://github.com/grafana/mimir/releases/tag/mimir-3.1.1",
-      "pubDate": "Fri, 12 Jun 2026 20:40:48 GMT",
-      "description": "<p>This release contains 10 PRs from 5 authors. Thank you!</p>\n<h1>Changelog</h1>\n<h2>3.1.1</h2>\n<h3>Grafana Mimir</h3>\n<ul>\n<li>[CHANGE] Update Docker image bases from Debian 12 to Debian 13 (<code>gcr.io/distroless/static-debian13</code>; race images use <code>base-nossl-debian13</code>). #15629</li>\n<li>[BUGFIX] Upgrade Go to 1.26.4 to address <a href=\"https://pkg.go.dev/vuln/GO-2026-5039\">CVE-2026-42507</a>. #15659</li>\n<li>[BUGFIX] Update <code>golang.org/x/crypto</code> to v0.52.0, <code>golang.org/x/net</code> to v0.55.0, and <code>golang.org/x/sys</code> to v0.44.0 to address <a href=\"https://nvd.nist.gov/vuln/detail/CVE-2026-39833\">CVE-2026-39833</a>, <a href=\"https://nvd.nist.gov/vuln/detail/CVE-2026-39832\">CVE-2026-39832</a>, <a href=\"https://nvd.nist.gov/vuln/detail/CVE-2026-46597\">CVE-2026-46597</a>, <a href=\"https://nvd.nist.gov/vuln/detail/CVE-2026-42506\">CVE-2026-42506</a>, <a href=\"https://nvd.nist.gov/vuln/detail/CVE-2026-39821\">CVE-2026-39821</a>, <a href=\"https://nvd.nist.gov/vuln/detail/CVE-2026-42502\">CVE-2026-42502</a>, <a href=\"https://nvd.nist.gov/vuln/detail/CVE-2026-25680\">CVE-2026-25680</a>, <a href=\"https://nvd.nist.gov/vuln/detail/CVE-2026-25681\">CVE-2026-25681</a>, <a href=\"https://nvd.nist.gov/vuln/detail/CVE-2026-27136\">CVE-2026-27136</a>, <a href=\"https://nvd.nist.gov/vuln/detail/CVE-2026-39824\">CVE-2026-39824</a>. #15636 #15637 #15638 #15639</li>\n</ul>\n<p><strong>All changes in this release</strong>: <a href=\"https://github.com/grafana/mimir/compare/mimir-3.1.0...mimir-3.1.1\">https://github.com/grafana/mimir/compare/mimir-3.1.0...mimir-3.1.1</a></p>",
-      "tags": [
-        "observability",
-        "metrics"
-      ]
-    },
-    {
-      "title": "Grafana v13.0.2",
-      "link": "https://github.com/grafana/grafana/releases/tag/v13.0.2",
-      "guid": "https://github.com/grafana/grafana/releases/tag/v13.0.2",
-      "pubDate": "Tue, 09 Jun 2026 11:19:16 GMT",
-      "description": "<p><a href=\"https://grafana.com/grafana/download/13.0.2\">Download page</a></p>\n<p><a href=\"https://grafana.com/docs/grafana/latest/whatsnew/\">What's new highlights</a></p>\n<h3>Features and enhancements</h3>\n<ul>\n<li><strong>Dashboards:</strong> Show k8s format in provisioned save <a href=\"https://github.com/grafana/grafana/pull/123045\">#123045</a>, <a href=\"https://github.com/stephaniehingtgen\">@stephaniehingtgen</a></li>\n<li><strong>Docker:</strong> Bump Alpine-based images to 3.23.4 <a href=\"https://github.com/grafana/grafana/pull/122938\">#122938</a>, <a href=\"https://github.com/Proximyst\">@Proximyst</a></li>\n<li><strong>Go:</strong> Update version to 1.26.3 <a href=\"https://github.com/grafana/grafana/pull/124454\">#124454</a>, <a href=\"https://github.com/macabu\">@macabu</a></li>\n<li><strong>Homepage:</strong> Support v2 dashboards if defined by a file <a href=\"https://github.com/grafana/grafana/pull/123029\">#123029</a>, <a href=\"https://github.com/stephaniehingtgen\">@stephaniehingtgen</a></li>\n<li><strong>LibraryPanels:</strong> Return 403 instead of 500 for insufficient permissions <a href=\"https://github.com/grafana/grafana/pull/123467\">#123467</a>, <a href=\"https://github.com/MissingRoberto\">@MissingRoberto</a></li>\n<li><strong>Provisioning:</strong> Don't mark folders pending due to \\_folder.json metadata <a href=\"https://github.com/grafana/grafana/pull/124139\">#124139</a>, <a href=\"https://github.com/MissingRoberto\">@MissingRoberto</a></li>\n<li><strong>Provisioning:</strong> Honor ruleset bypass for write workflow validation <a href=\"https://github.com/grafana/grafana/pull/124128\">#124128</a>, <a href=\"https://github.com/MissingRoberto\">@MissingRoberto</a></li>\n<li><strong>Provisioning:</strong> Negotiate receive-pack capabilities for git pushes <a href=\"https://github.com/grafana/grafana/pull/124130\">#124130</a>, <a href=\"https://github.com/MissingRoberto\">@MissingRoberto</a></li>\n<li><strong>Provisioning:</strong> Per-verb fallback for the files subresource <a href=\"https://github.com/grafana/grafana/pull/123900\">#123900</a>, <a href=\"https://github.com/MissingRoberto\">@MissingRoberto</a></li>\n<li><strong>Provisioning:</strong> Scope repository uniqueness by (URL, branch, path) <a href=\"https://github.com/grafana/grafana/pull/124121\">#124121</a>, <a href=\"https://github.com/ferruvich\">@ferruvich</a></li>\n<li><strong>Provisioning:</strong> Surface folder uid-too-long and other validation 4xx as sync warnings <a href=\"https://github.com/grafana/grafana/pull/123888\">#123888</a>, <a href=\"https://github.com/MissingRoberto\">@MissingRoberto</a></li>\n<li><strong>Provisioning:</strong> add public<em>root</em>url instance setting for external URLs <a href=\"https://github.com/grafana/grafana/pull/124258\">#124258</a>, <a href=\"https://github.com/MissingRoberto\">@MissingRoberto</a></li>\n</ul>\n<h3>Bug fixes</h3>\n<ul>\n<li><strong>DashboardDS:</strong> Fix Mixed panels not updating on time-range change with stale upstreams <a href=\"https://github.com/grafana/grafana/pull/124894\">#124894</a>, <a href=\"https://github.com/ivanortegaalba\">@ivanortegaalba</a></li>\n<li><strong>Jaeger:</strong> Fix log event timestamp unit conversion in trace view <a href=\"https://github.com/grafana/grafana/pull/123707\">#123707</a>, <a href=\"https://github.com/ktw4071\">@ktw4071</a></li>\n<li><strong>K8s Dashboards:</strong> Fix folder permission check to use dashboards:create <a href=\"https://github.com/grafana/grafana/pull/124942\">#124942</a>, <a href=\"https://github.com/mihai-turdean\">@mihai-turdean</a></li>\n<li><strong>PostgreSQL:</strong> Allow sql_engine to return results for EXPLAIN queries <a href=\"https://github.com/grafana/grafana/pull/123246\">#123246</a>, <a href=\"https://github.com/sdague\">@sdague</a></li>\n<li><strong>Provisioning:</strong> Bump nanogit to v0.17.0 to fix pushes with repositories using git modules <a href=\"https://github.com/grafana/grafana/pull/124140\">#124140</a>, <a href=\"https://github.com/MissingRoberto\">@MissingRoberto</a></li>\n<li><strong>RBAC:</strong> Quick fix for global datasource permissions (Enterprise)</li>\n<li><strong>Security</strong>: CVE-2026-9029</li>\n<li><strong>Security</strong>: CVE-2026-33382</li>\n<li><strong>Security</strong>: CVE-2026-42127</li>\n<li><strong>Security</strong>: CVE-2026-42129</li>\n<li><strong>Security</strong>: CVE-2026-10601</li>\n<li><strong>Security</strong>: CVE-2026-8609</li>\n<li><strong>Security</strong>: CVE-2026-8595</li>\n</ul>",
-      "tags": [
-        "observability",
-        "dashboards"
-      ]
-    },
-    {
-      "title": "Apache Kafka — 4.3.1-rc0",
-      "link": "https://github.com/apache/kafka/releases/tag/4.3.1-rc0",
-      "guid": "tag:github.com,2008:Repository/2211243/4.3.1-rc0",
-      "pubDate": "Thu, 11 Jun 2026 20:19:43 GMT",
-      "description": "<p>4.3.1-rc0</p>",
-      "tags": [
-        "streaming",
-        "backend"
-      ]
-    },
-    {
-      "title": "Weekly Digest — 2026-06-08",
-      "link": "https://rickyf115.github.io/oss-feed/",
-      "guid": "https://rickyf115.github.io/oss-feed/digest/2026-06-08",
-      "guidIsPermalink": false,
-      "pubDate": "Mon, 08 Jun 2026 12:36:37 GMT",
-      "description": "<h3>streaming</h3>\n<ul>\n  <li><a href=\"https://github.com/redpanda-data/kminion/releases/tag/v2.3.2\">Kafka Minion v2.3.2</a></li>\n</ul>",
-      "tags": []
-    },
-    {
-      "title": "Kafka Minion v2.3.2",
-      "link": "https://github.com/redpanda-data/kminion/releases/tag/v2.3.2",
-      "guid": "https://github.com/redpanda-data/kminion/releases/tag/v2.3.2",
-      "pubDate": "Fri, 05 Jun 2026 12:55:20 GMT",
-      "description": "<h2>Changelog</h2>\n<ul>\n<li>b62638bec2d23c8cdb659013f54eeb077257db4c: Bump Go toolchain to 1.26.3 to address Snyk findings (@twmb)</li>\n<li>9f005ebf91d7b86bdb2f3e7850647c78927fea41: security: bump golang.org/x/net to v0.55.0 (CVE-2026-39821) (@frenchfrywpepper)</li>\n<li>5ad819839c850916ff045c0cde25b6c476eddafa: Merge pull request #341 from redpanda-data/sarah/snyk-xnet-idna-cve-2026-39821 (@frenchfrywpepper)</li>\n</ul>\n<h2>Docker Image</h2>\n<p>Use the following command to pull this release's Docker image:</p>\n<pre><code>docker pull redpandadata/kminion:v2.3.2</code></pre>",
-      "tags": [
-        "streaming",
-        "observability"
       ]
     }
   ]

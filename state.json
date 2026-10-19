@@ -2,62 +2,104 @@
   "projects": {
     "https://github.com/apache/kafka/releases.atom": {
       "last_seen": "tag:github.com,2008:Repository/2211243/4.3.2-rc3",
-      "checked_at": "2026-10-12T17:30:41.231Z"
+      "checked_at": "2026-10-19T15:21:25.765Z"
     },
     "redpanda-data/kminion": {
       "last_seen": "v2.3.6",
-      "checked_at": "2026-10-12T17:30:41.693Z"
+      "checked_at": "2026-10-19T15:21:26.531Z"
     },
     "kubernetes/kubernetes": {
       "last_seen": "v1.37.1",
-      "checked_at": "2026-10-12T17:30:41.780Z"
+      "checked_at": "2026-10-19T15:21:26.692Z"
     },
     "helm/helm": {
-      "last_seen": "v4.3.0",
-      "checked_at": "2026-10-12T17:30:41.945Z"
+      "last_seen": "v4.3.1",
+      "checked_at": "2026-10-19T15:21:26.872Z"
     },
     "argoproj/argo-cd": {
       "last_seen": "v3.5.5",
-      "checked_at": "2026-10-12T17:30:42.093Z"
+      "checked_at": "2026-10-19T15:21:27.010Z"
     },
     "cert-manager/cert-manager": {
       "last_seen": "v1.21.2",
-      "checked_at": "2026-10-12T17:30:42.191Z"
+      "checked_at": "2026-10-19T15:21:27.159Z"
     },
     "kubernetes-sigs/external-dns": {
       "last_seen": "v0.23.0",
-      "checked_at": "2026-10-12T17:30:42.283Z"
+      "checked_at": "2026-10-19T15:21:27.302Z"
     },
     "prometheus/prometheus": {
       "last_seen": "v3.15.0",
-      "checked_at": "2026-10-12T17:30:42.421Z"
+      "checked_at": "2026-10-19T15:21:27.478Z"
     },
     "prometheus-operator/prometheus-operator": {
       "last_seen": "v0.94.1",
-      "checked_at": "2026-10-12T17:30:42.564Z"
+      "checked_at": "2026-10-19T15:21:27.666Z"
     },
     "kubernetes/kube-state-metrics": {
       "last_seen": "v2.20.0",
-      "checked_at": "2026-10-12T17:30:42.689Z"
+      "checked_at": "2026-10-19T15:21:27.835Z"
     },
     "thanos-io/thanos": {
       "last_seen": "v0.42.4",
-      "checked_at": "2026-10-12T17:30:42.801Z"
+      "checked_at": "2026-10-19T15:21:27.979Z"
     },
     "grafana/mimir": {
       "last_seen": "mimir-3.2.2",
-      "checked_at": "2026-10-12T17:30:43.009Z"
+      "checked_at": "2026-10-19T15:21:28.228Z"
     },
     "grafana/grafana": {
-      "last_seen": "v13.2.3",
-      "checked_at": "2026-10-12T17:30:43.125Z"
+      "last_seen": "v13.2.4",
+      "checked_at": "2026-10-19T15:21:28.420Z"
     },
     "https://console.warpstream.com/agent-changelog.rss": {
-      "last_seen": "https://docs.warpstream.com/warpstream/overview/change-log#release-v849",
-      "checked_at": "2026-10-12T17:30:41.503Z"
+      "last_seen": "https://docs.warpstream.com/warpstream/overview/change-log#release-v851",
+      "checked_at": "2026-10-19T15:21:26.231Z"
     }
   },
   "feed_items": [
+    {
+      "title": "Weekly Digest — 2026-10-19",
+      "link": "https://rickyf115.github.io/oss-feed/",
+      "guid": "https://rickyf115.github.io/oss-feed/digest/2026-10-19",
+      "guidIsPermalink": false,
+      "pubDate": "Mon, 19 Oct 2026 15:21:28 GMT",
+      "description": "<h3>kubernetes</h3>\n<ul>\n  <li><a href=\"https://github.com/helm/helm/releases/tag/v4.3.1\">Helm v4.3.1</a></li>\n</ul>\n\n<h3>observability</h3>\n<ul>\n  <li><a href=\"https://github.com/grafana/grafana/releases/tag/v13.2.4\">Grafana v13.2.4</a></li>\n</ul>\n\n<h3>streaming</h3>\n<ul>\n  <li><a href=\"https://docs.warpstream.com/warpstream/overview/change-log#release-v851\">Warpstream Agent — WarpStream Agent v851</a></li>\n</ul>",
+      "tags": []
+    },
+    {
+      "title": "Helm v4.3.1",
+      "link": "https://github.com/helm/helm/releases/tag/v4.3.1",
+      "guid": "https://github.com/helm/helm/releases/tag/v4.3.1",
+      "pubDate": "Thu, 15 Oct 2026 01:08:37 GMT",
+      "description": "<p>Helm v4.3.1 is a patch release. Users are encouraged to upgrade for the best experience.</p>\n<p>The community keeps growing, and we'd love to see you there!</p>\n<ul>\n<li>Join the discussion in <a href=\"https://kubernetes.slack.com\">Kubernetes Slack</a>:</li>\n</ul>\n<p>  -  for questions and just to hang out</p>\n<p>  -  for discussing PRs, code, and bugs</p>\n<ul>\n<li>Hang out at the Public Developer Call: Thursday, 9:30 Pacific via <a href=\"https://zoom-lfx.platform.linuxfoundation.org/meeting/91295593969?password=17825db5-c698-44cc-9f00-ef1f61f5d3fb\">Zoom</a></li>\n<li>Test, debug, and contribute charts: <a href=\"https://artifacthub.io/packages/search?kind=0\">ArtifactHub/packages</a></li>\n</ul>\n<h2>Notable Changes</h2>\n<ul>\n<li>fix(action): wait for CRD establishment under HookOnlyStrategy #32672 by @pujitha24</li>\n<li>fix(linters): update golangci-lint to v2.14.0 #32744 by @ruslan-shaydullin</li>\n</ul>\n<h2>Installation and Upgrading</h2>\n<p>Download Helm v4.3.1. The common platform binaries are here:</p>\n<ul>\n<li><a href=\"https://get.helm.sh/helm-v4.3.1-darwin-amd64.tar.gz\">MacOS amd64</a> (<a href=\"https://get.helm.sh/helm-v4.3.1-darwin-amd64.tar.gz.sha256sum\">checksum</a> / 34bec4eba761ba5c16d1965ee6b8f5b0abe5993974a802274e2a4f0418893d89)</li>\n<li><a href=\"https://get.helm.sh/helm-v4.3.1-darwin-arm64.tar.gz\">MacOS arm64</a> (<a href=\"https://get.helm.sh/helm-v4.3.1-darwin-arm64.tar.gz.sha256sum\">checksum</a> / 6b4e61c8cd27d99e5a801e63ff25dd5c70b36875c2cd659d3e9ce6b76fc23198)</li>\n<li><a href=\"https://get.helm.sh/helm-v4.3.1-linux-amd64.tar.gz\">Linux amd64</a> (<a href=\"https://get.helm.sh/helm-v4.3.1-linux-amd64.tar.gz.sha256sum\">checksum</a> / 0403a88ae20913d11b10a2467b50087721fea7581736da6b9d3992f5357fe54b)</li>\n<li><a href=\"https://get.helm.sh/helm-v4.3.1-linux-arm.tar.gz\">Linux arm</a> (<a href=\"https://get.helm.sh/helm-v4.3.1-linux-arm.tar.gz.sha256sum\">checksum</a> / 292588ea9f89705511c93a39687fe5e26767bd85b5085a1be9a2a1563c1e28fa)</li>\n<li><a href=\"https://get.helm.sh/helm-v4.3.1-linux-arm64.tar.gz\">Linux arm64</a> (<a href=\"https://get.helm.sh/helm-v4.3.1-linux-arm64.tar.gz.sha256sum\">checksum</a> / 8cf8f66ecbc252ac8f7f06cca68aba88508ddfde3a6a34feb1678ad1694b4f88)</li>\n<li><a href=\"https://get.helm.sh/helm-v4.3.1-linux-386.tar.gz\">Linux i386</a> (<a href=\"https://get.helm.sh/helm-v4.3.1-linux-386.tar.gz.sha256sum\">checksum</a> / bfe8cbbec02362d869e183f27ca03342820ceae908f7a7db2e17caeef74e6d30)</li>\n<li><a href=\"https://get.helm.sh/helm-v4.3.1-linux-loong64.tar.gz\">Linux loong64</a> (<a href=\"https://get.helm.sh/helm-v4.3.1-linux-loong64.tar.gz.sha256sum\">checksum</a> / 5fc8ae4eb1d513775374160a1ff5255290b86e8a71beeae09ae7d3a60f50962f)</li>\n<li><a href=\"https://get.helm.sh/helm-v4.3.1-linux-ppc64le.tar.gz\">Linux ppc64le</a> (<a href=\"https://get.helm.sh/helm-v4.3.1-linux-ppc64le.tar.gz.sha256sum\">checksum</a> / 11bbb554976ce22aeb21b308bb5683f98941db81725d2b280d8b943b6ada8036)</li>\n<li><a href=\"https://get.helm.sh/helm-v4.3.1-linux-s390x.tar.gz\">Linux s390x</a> (<a href=\"https://get.helm.sh/helm-v4.3.1-linux-s390x.tar.gz.sha256sum\">checksum</a> / dfb031400c1215c0bd673d5e25bcd300a5af903fbfed10b5cb8b3ffc03bcecb6)</li>\n<li><a href=\"https://get.helm.sh/helm-v4.3.1-linux-riscv64.tar.gz\">Linux riscv64</a> (<a href=\"https://get.helm.sh/helm-v4.3.1-linux-riscv64.tar.gz.sha256sum\">checksum</a> / 20ebb3346bf1d5e5c330a7f1405cfea8eab6a5e1752f24055f03a5221be1688e)</li>\n<li><a href=\"https://get.helm.sh/helm-v4.3.1-windows-amd64.zip\">Windows amd64</a> (<a href=\"https://get.helm.sh/helm-v4.3.1-windows-amd64.zip.sha256sum\">checksum</a> / fcfd7b796dcf0f225abc40b5636a3b01f55f3de2fb1dfb18475df94e62c14112)</li>\n<li><a href=\"https://get.helm.sh/helm-v4.3.1-windows-arm64.zip\">Windows arm64</a> (<a href=\"https://get.helm.sh/helm-v4.3.1-windows-arm64.zip.sha256sum\">checksum</a> / 373edaae86db70342ef39b014e2e7764ea8f9cff08714843daa5e55b5ee492f2)</li>\n</ul>\n<p>This release was signed with <code>208D D36E D5BB 3745 A167 43A4 C7C6 FBB5 B91C 1155</code> and can be found at @scottrigby <a href=\"https://keybase.io/r6by\">keybase account</a>. Please use the attached signatures for verifying this release using <code>gpg</code>.</p>\n<p>The <a href=\"https://helm.sh/docs/intro/quickstart/\">Quickstart Guide</a> will get you going from there. For <strong>upgrade instructions</strong> or detailed installation notes, check the <a href=\"https://helm.sh/docs/intro/install/\">install guide</a>. You can also use a <a href=\"https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-4\">script to install</a> on any system with <code>bash</code>.</p>\n<h2>What's Next</h2>\n<ul>\n<li>4.3.2 and 3.22.2 are the next patch releases scheduled for November 11, 2026</li>\n<li>4.4.0 is the next minor release scheduled for January 13, 2027. There will be no further Helm 3 minor releases (see <a href=\"https://helm.sh/blog/helm-v3-end-of-life\">https://helm.sh/blog/helm-v3-end-of-life</a></li>\n</ul>\n<h2>Changelog</h2>\n<ul>\n<li>chore(deps): bump otlploghttp and stdoutlog to v0.21.0 c0d08d0d6d9424d4a14febb5e8a3e51b0dd00dff (Terry Howe)</li>\n<li>chore(deps): bump the k8s-io group across 1 directory with 7 updates 0c0146eb409bcbc1793d97d67500cdf55050a742 (dependabot[bot])</li>\n<li>fix: bump golang.org/x/net to v0.61.0 (#32758) dd91731c138d76a26b3aa3ff69e6d40febe8e737 (Terry Howe)</li>\n<li>fix(linters): update golangci-lint to v2.14.0 (#32744) 3a376b2917d335edcbc714c0b3770442255ec9af (Ruslan Shaydullin)</li>\n<li>fix(action): wait for CRD establishment under HookOnlyStrategy (#32672) 5fed6a5e0de4669dc4436eb02db9036fe5941b46 (Pujitha Paladugu)</li>\n<li>chore(deps): bump sigs.k8s.io/controller-runtime from 0.25.1 to 0.25.2 (#32726) b227bf4704ab6ce9aa2de78ba70d8d227564f0c8 (dependabot[bot])</li>\n<li>chore(deps): bump sigs.k8s.io/kustomize/kyaml from 0.21.1 to 0.21.2 (#32715) af79b8ebe296201b47e8f7dac9b6c8a8927086d7 (dependabot[bot])</li>\n<li>chore(deps): bump go.opentelemetry.io/otel/exporters/otlp/otlplog/otlploggrpc ab6b245a2cdcadac70d5abbe25b0ae748df914e6 (dependabot[bot])</li>\n<li>chore(deps): bump go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracehttp (#32665) 0f206176faf573da63727dd7ddea5a11bfa98792 (dependabot[bot])</li>\n<li>chore(deps): bump go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc (#32664) e26e15829234121ee0c1bad535ad4ba70e8caa65 (dependabot[bot])</li>\n<li>chore(deps): bump go.opentelemetry.io/otel/exporters/otlp/otlptrace (#32663) 23ab1c558484f6e58b28029cdacce7a4938b59e3 (dependabot[bot])</li>\n<li>chore(deps): bump go.opentelemetry.io/otel/sdk from 1.44.0 to 1.45.0 (#32662) 8303180a5eec17dda46ac1995d65d7d40bf21b98 (dependabot[bot])</li>\n</ul>",
+      "tags": [
+        "kubernetes",
+        "packaging"
+      ]
+    },
+    {
+      "title": "Grafana v13.2.4",
+      "link": "https://github.com/grafana/grafana/releases/tag/v13.2.4",
+      "guid": "https://github.com/grafana/grafana/releases/tag/v13.2.4",
+      "pubDate": "Tue, 13 Oct 2026 11:41:03 GMT",
+      "description": "<p><a href=\"https://grafana.com/grafana/download/13.2.4\">Download page</a></p>\n<p><a href=\"https://grafana.com/docs/grafana/latest/whatsnew/\">What's new highlights</a></p>\n<h3>Security</h3>\n<ul>\n<li>Security: Fix CVE-2026-15577</li>\n<li>Security: Fix CVE-2026-33374</li>\n<li>Security: Fix CVE-2026-93294</li>\n<li>Security: Fix CVE-2026-95502</li>\n</ul>\n<h3>Features and enhancements</h3>\n<ul>\n<li><strong>Alerting:</strong> Strip sensitive headers from oauth2 cross-host redirects <a href=\"https://github.com/grafana/grafana/pull/134433\">#134433</a>, <a href=\"https://github.com/JacobsonMT\">@JacobsonMT</a></li>\n<li><strong>Dashboard:</strong> Fall back when collection deletion is unsupported <a href=\"https://github.com/grafana/grafana/pull/134224\">#134224</a>, <a href=\"https://github.com/bestend\">@bestend</a></li>\n<li><strong>Git Sync:</strong> Clarify repository links for pure Git <a href=\"https://github.com/grafana/grafana/pull/134253\">#134253</a>, <a href=\"https://github.com/ferruvich\">@ferruvich</a></li>\n<li><strong>Provisioning:</strong> Allow resource previews in unsynced folders <a href=\"https://github.com/grafana/grafana/pull/134391\">#134391</a>, [@grafana-writer[bot]](<a href=\"https://github.com/grafana-writer[bot\">https://github.com/grafana-writer[bot</a></li>\n<li><strong>Provisioning:</strong> Reject invalid resource names before API calls <a href=\"https://github.com/grafana/grafana/pull/133776\">#133776</a>, [@grafana-writer[bot]](<a href=\"https://github.com/grafana-writer[bot\">https://github.com/grafana-writer[bot</a></li>\n<li><strong>Provisioning:</strong> Show last checked time in Pull status <a href=\"https://github.com/grafana/grafana/pull/134483\">#134483</a>, <a href=\"https://github.com/ferruvich\">@ferruvich</a></li>\n<li><strong>Provisioning:</strong> Skip previews for pull requests from forks <a href=\"https://github.com/grafana/grafana/pull/133799\">#133799</a>, <a href=\"https://github.com/ferruvich\">@ferruvich</a></li>\n<li><strong>Provisioning:</strong> Stop PR previews when refs disappear <a href=\"https://github.com/grafana/grafana/pull/133855\">#133855</a>, <a href=\"https://github.com/ferruvich\">@ferruvich</a></li>\n<li><strong>Provisioning:</strong> Support legacy paths and diagnose missing source annotations <a href=\"https://github.com/grafana/grafana/pull/133779\">#133779</a>, [@grafana-writer[bot]](<a href=\"https://github.com/grafana-writer[bot\">https://github.com/grafana-writer[bot</a></li>\n<li><strong>Provisioning:</strong> write terminal sync status back to repository on early sync-job failures and Respect Git Sync polling intervals after unchanged refs <a href=\"https://github.com/grafana/grafana/pull/134478\">#134478</a>, <a href=\"https://github.com/mustafasencer\">@mustafasencer</a></li>\n</ul>\n<h3>Bug fixes</h3>\n<ul>\n<li><strong>CVE-2026-92539:</strong> IAM: Fix: SCIM (Enterprise)</li>\n</ul>",
+      "tags": [
+        "observability",
+        "dashboards"
+      ]
+    },
+    {
+      "title": "Warpstream Agent — WarpStream Agent v851",
+      "link": "https://docs.warpstream.com/warpstream/overview/change-log#release-v851",
+      "guid": "https://docs.warpstream.com/warpstream/overview/change-log#release-v851",
+      "pubDate": "Thu, 15 Oct 2026 20:23:15 GMT",
+      "description": "<ul><li>Schema Registry: Fix a formatting issue affecting Protobuf schemas containing options with message literals so that they are formatted like the Confluent Schema Registry. Re-registering such a schema may create a new version and schema ID for it.</li><li>Schema Registry: Allow using types and options from `confluent/meta`, `confluent/variant`, `confluent/decimal` without declaring the import in Protobuf schemas.</li><li>Finalize GCS Rapid Storage objects synchronously by default, preventing multi-bucket reads from selecting truncated replicas. Stream batcher writes use marker-protected asynchronous finalization to preserve produce latency.</li><li>Add `-httpsProxyCACertFile` (`WARPSTREAM_HTTPS_PROXY_CA_CERT_FILE`) to the `metrics` command, so the dedicated metrics pod can trust a private CA like the agent.</li></ul>",
+      "tags": [
+        "streaming",
+        "backend"
+      ]
+    },
     {
       "title": "Weekly Digest — 2026-10-12",
       "link": "https://rickyf115.github.io/oss-feed/",
@@ -1077,48 +1119,6 @@
       "pubDate": "Mon, 15 Jun 2026 17:55:56 GMT",
       "description": "<h3>streaming</h3>\n<ul>\n  <li><a href=\"https://docs.warpstream.com/warpstream/overview/change-log#release-v807\">Warpstream Agent — WarpStream Agent v807</a></li>\n</ul>",
       "tags": []
-    },
-    {
-      "title": "Warpstream Agent — WarpStream Agent v807",
-      "link": "https://docs.warpstream.com/warpstream/overview/change-log#release-v807",
-      "guid": "https://docs.warpstream.com/warpstream/overview/change-log#release-v807",
-      "pubDate": "Fri, 12 Jun 2026 14:25:19 GMT",
-      "description": "<ul><li>Orbit Auto Migration is now available.</li></ul>",
-      "tags": [
-        "streaming",
-        "backend"
-      ]
-    },
-    {
-      "title": "Weekly Digest — 2026-06-15",
-      "link": "https://rickyf115.github.io/oss-feed/",
-      "guid": "https://rickyf115.github.io/oss-feed/digest/2026-06-15",
-      "guidIsPermalink": false,
-      "pubDate": "Mon, 15 Jun 2026 14:26:19 GMT",
-      "description": "<h3>kubernetes</h3>\n<ul>\n  <li><a href=\"https://github.com/kubernetes/kubernetes/releases/tag/v1.36.2\">Kubernetes v1.36.2</a></li>\n  <li><a href=\"https://github.com/helm/helm/releases/tag/v4.2.1\">Helm v4.2.1</a></li>\n</ul>\n\n<h3>observability</h3>\n<ul>\n  <li><a href=\"https://github.com/kubernetes/kube-state-metrics/releases/tag/v2.19.1\">kube-state-metrics v2.19.1</a></li>\n  <li><a href=\"https://github.com/grafana/mimir/releases/tag/mimir-3.1.1\">Grafana Mimir mimir-3.1.1</a></li>\n  <li><a href=\"https://github.com/grafana/grafana/releases/tag/v13.0.2\">Grafana v13.0.2</a></li>\n</ul>\n\n<h3>streaming</h3>\n<ul>\n  <li><a href=\"https://github.com/apache/kafka/releases/tag/4.3.1-rc0\">Apache Kafka — 4.3.1-rc0</a></li>\n</ul>",
-      "tags": []
-    },
-    {
-      "title": "Kubernetes v1.36.2",
-      "link": "https://github.com/kubernetes/kubernetes/releases/tag/v1.36.2",
-      "guid": "https://github.com/kubernetes/kubernetes/releases/tag/v1.36.2",
-      "pubDate": "Fri, 12 Jun 2026 11:34:56 GMT",
-      "description": "<p>See <a href=\"https://groups.google.com/forum/#!forum/kubernetes-announce\">kubernetes-announce@</a>. Additional binary downloads are linked in the <a href=\"https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.36.md\">CHANGELOG</a>.</p>\n<p>See the <a href=\"https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.36.md\">CHANGELOG</a> for more details.</p>",
-      "tags": [
-        "kubernetes",
-        "core"
-      ]
-    },
-    {
-      "title": "Helm v4.2.1",
-      "link": "https://github.com/helm/helm/releases/tag/v4.2.1",
-      "guid": "https://github.com/helm/helm/releases/tag/v4.2.1",
-      "pubDate": "Fri, 12 Jun 2026 15:06:26 GMT",
-      "description": "<p>Helm v4.2.1 is a patch release. Users are encouraged to upgrade for the best experience.</p>\n<p>The community keeps growing, and we'd love to see you there!</p>\n<ul>\n<li>Join the discussion in <a href=\"https://kubernetes.slack.com\">Kubernetes Slack</a>:</li>\n</ul>\n<p>  -  for questions and just to hang out</p>\n<p>  -  for discussing PRs, code, and bugs</p>\n<ul>\n<li>Hang out at the Public Developer Call: Thursday, 9:30 Pacific via <a href=\"https://zoom.us/j/696660622\">Zoom</a></li>\n<li>Test, debug, and contribute charts: <a href=\"https://artifacthub.io/packages/search?kind=0\">ArtifactHub/packages</a></li>\n</ul>\n<h2>Notable Changes</h2>\n<ul>\n<li>Fixed data race detected by -race flag when concurrent goroutines (upgrade + rollback, install + uninstall) both call GetWaiterWithOptions on the same FailingKubeClient instance #31925</li>\n<li>Fixed helm command success messages writing to stderr instead of stdout. Now correctly outputing to stdout #32056</li>\n<li>Fixed Helm 4 emitting \"unable to find exact version\" when using version range constraints #31757</li>\n<li>Fixed a race condition in WaitForDelete where the status observer canceled the watch too early, causing intermittent failures when running a full test suite #32081</li>\n<li>Bumped golang.org/x/net to v0.55.0 to address GO-2026-5026 #32153</li>\n<li>Fixed SDK errors by upgrading dependencies: cli-utils 1.2.1, controller-runtime 0.24.1 and k8s 1.36.1 #32128</li>\n<li>Dependency updates</li>\n</ul>\n<h2>Installation and Upgrading</h2>\n<p>Download Helm v4.2.1. The common platform binaries are here:</p>\n<ul>\n<li><a href=\"https://get.helm.sh/helm-v4.2.1-darwin-amd64.tar.gz\">MacOS amd64</a> (<a href=\"https://get.helm.sh/helm-v4.2.1-darwin-amd64.tar.gz.sha256sum\">checksum</a> / 2a21c9f368d608bcf6eb794ebc06514eb6b529a846b60fe4a43dea7bcce65228)</li>\n<li><a href=\"https://get.helm.sh/helm-v4.2.1-darwin-arm64.tar.gz\">MacOS arm64</a> (<a href=\"https://get.helm.sh/helm-v4.2.1-darwin-arm64.tar.gz.sha256sum\">checksum</a> / 896472d2ec0740c60f64a9df0fc30d478beee38a1a2a6ed91aa6e6ee177c1575)</li>\n<li><a href=\"https://get.helm.sh/helm-v4.2.1-linux-amd64.tar.gz\">Linux amd64</a> (<a href=\"https://get.helm.sh/helm-v4.2.1-linux-amd64.tar.gz.sha256sum\">checksum</a> / 479dca836e5b45e8bd222400c5591b0e3a647378f03ff96597180db97c17fdae)</li>\n<li><a href=\"https://get.helm.sh/helm-v4.2.1-linux-arm.tar.gz\">Linux arm</a> (<a href=\"https://get.helm.sh/helm-v4.2.1-linux-arm.tar.gz.sha256sum\">checksum</a> / 49e8f7856de6eab170dc09671cfb0578cc455d820df5b0f54e6453058dc0e3f3)</li>\n<li><a href=\"https://get.helm.sh/helm-v4.2.1-linux-arm64.tar.gz\">Linux arm64</a> (<a href=\"https://get.helm.sh/helm-v4.2.1-linux-arm64.tar.gz.sha256sum\">checksum</a> / 596b9a73d366c1e72ce67d595c22805480e30914593aafbc9f547694e72814db)</li>\n<li><a href=\"https://get.helm.sh/helm-v4.2.1-linux-386.tar.gz\">Linux i386</a> (<a href=\"https://get.helm.sh/helm-v4.2.1-linux-386.tar.gz.sha256sum\">checksum</a> / e038eab680f22b1cebe68fd0536cf2397b0c10798dcb23c28e500e0804ec1a55)</li>\n<li><a href=\"https://get.helm.sh/helm-v4.2.1-linux-loong64.tar.gz\">Linux loong64</a> (<a href=\"https://get.helm.sh/helm-v4.2.1-linux-loong64.tar.gz.sha256sum\">checksum</a> / 8ae26f15638d951c4ed21d0d3018b8800a137646e5e5151a3856cf324c2852ae)</li>\n<li><a href=\"https://get.helm.sh/helm-v4.2.1-linux-ppc64le.tar.gz\">Linux ppc64le</a> (<a href=\"https://get.helm.sh/helm-v4.2.1-linux-ppc64le.tar.gz.sha256sum\">checksum</a> / 6f34eca5e314e941577a07be6c8b356f66b9cdefbed1175da1e7916368febcfc)</li>\n<li><a href=\"https://get.helm.sh/helm-v4.2.1-linux-s390x.tar.gz\">Linux s390x</a> (<a href=\"https://get.helm.sh/helm-v4.2.1-linux-s390x.tar.gz.sha256sum\">checksum</a> / e6355691887d4185b7e077f058483c04f353229feb7d4a72edc3ebe0b8738a6a)</li>\n<li><a href=\"https://get.helm.sh/helm-v4.2.1-linux-riscv64.tar.gz\">Linux riscv64</a> (<a href=\"https://get.helm.sh/helm-v4.2.1-linux-riscv64.tar.gz.sha256sum\">checksum</a> / 16a4299f14ff1ffa79bb22115051911c662fa2ecdd90e85b65d7d143e8de9d02)</li>\n<li><a href=\"https://get.helm.sh/helm-v4.2.1-windows-amd64.zip\">Windows amd64</a> (<a href=\"https://get.helm.sh/helm-v4.2.1-windows-amd64.zip.sha256sum\">checksum</a> / 6e7fa7839444b8ddc407c5bcdb1edd1024f57d09c2db971dec511ee2f2616eb0)</li>\n<li><a href=\"https://get.helm.sh/helm-v4.2.1-windows-arm64.zip\">Windows arm64</a> (<a href=\"https://get.helm.sh/helm-v4.2.1-windows-arm64.zip.sha256sum\">checksum</a> / ae4c9acd0d9acd1f9e9da2f60105f793f65fd49ab7c03c6c7d13804c3b885657)</li>\n</ul>\n<p>This release was signed with <code>208D D36E D5BB 3745 A167 43A4 C7C6 FBB5 B91C 1155</code> and can be found at @scottrigby <a href=\"https://keybase.io/r6by\">keybase account</a>. Please use the attached signatures for verifying this release using <code>gpg</code>.</p>\n<p>The <a href=\"https://helm.sh/docs/intro/quickstart/\">Quickstart Guide</a> will get you going from there. For <strong>upgrade instructions</strong> or detailed installation notes, check the <a href=\"https://helm.sh/docs/intro/install/\">install guide</a>. You can also use a <a href=\"https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-4\">script to install</a> on any system with <code>bash</code>.</p>\n<h2>What's Next</h2>\n<ul>\n<li>4.2.2 and 3.21.2 are the next patch releases scheduled for July 8, 2026</li>\n<li>4.3.0 and 3.22.0 are the next minor releases scheduled for September 9, 2026</li>\n</ul>\n<h2>Changelog</h2>\n<ul>\n<li>fix: protect FailingKubeClient.RecordedWaitOptions from data race (#31925) d591a19b953bd9cfdf7d9ddd83c2f4ffdaeafb29 (Terry Howe)</li>\n<li>fix: route registry client output to stdout instead of stderr (#32056) 2a9fcae29280472edec988c6bf0528e4ae79b33a (Terry Howe)</li>\n<li>chore(deps): bump oras.land/oras-go/v2 from 2.6.0 to 2.6.1 ffa5bd693eee68ba9c1ba42d160c69114eda962c (dependabot[bot])</li>\n<li>chore(deps): bump golang.org/x/crypto from 0.52.0 to 0.53.0 9f9dbaf94008044a516cda4837565237306578a7 (dependabot[bot])</li>\n<li>chore(deps): bump golang.org/x/term from 0.43.0 to 0.44.0 64a2891699ae9c8f2d0e06d5db3dd117649886a2 (dependabot[bot])</li>\n<li>chore(deps): bump golang.org/x/text from 0.37.0 to 0.38.0 e54a4a2b7d4ed9ca3bb4be7562f76dd5f2fd8f71 (dependabot[bot])</li>\n<li>chore(deps): bump github/codeql-action from 4.36.1 to 4.36.2 acb762b0ef8882b062ba8f6b87261411309875b8 (dependabot[bot])</li>\n<li>chore(deps): bump github/codeql-action from 4.36.0 to 4.36.1 768586df3f2a79fca5202b6713f8675bb097a904 (dependabot[bot])</li>\n<li>fix(version): avoid false range detection on prerelease x/X eabfae560459d1ffe1f7a3268d5441238e9f84b2 (Benoit Tigeot)</li>\n<li>fix(version): version range || can has no space e3fd51f331e14fb4056951540d2f2ffde81b405c (Benoit Tigeot)</li>\n<li>feat: report in debug the version we select with version range arg 1e47395a9566bcaaaf7ed9e31a8367eb1f95e0a3 (Benoit Tigeot)</li>\n<li>fix: prevent warning when using version range constraints a33e23939a85ac60eb9a6bee818f2c5459fda576 (Benoit Tigeot)</li>\n<li>fix(kube): always propagate context.Canceled in WaitForDelete fa06d4455724afe22bbe00af7925549a82d95e6c (Terry Howe)</li>\n<li>fix(kube): prevent spurious early exit in WaitForDelete during informer sync 360d4835df0fb8bd7cbde4cad0cbc79de01a6e93 (Terry Howe)</li>\n<li>chore(deps): bump github.com/tetratelabs/wazero from 1.11.0 to 1.12.0 7651edf21e31b5c33df82e67f23855d1358d021d (dependabot[bot])</li>\n<li>chore(deps): bump golang.org/x/crypto from 0.51.0 to 0.52.0 b132e7e43f3620eb60ef3524527c1b2fceed90e9 (dependabot[bot])</li>\n<li>fix(deps): bump golang.org/x/net to v0.55.0 to address GO-2026-5026 eee491a7461a524b87e5bb73ea5a0c4f82c72469 (Terry Howe)</li>\n<li>chore(deps): bump golangci/golangci-lint-action from 9.2.0 to 9.2.1 3e3c5751b1723239cbce042533db0d84b65c6bc1 (dependabot[bot])</li>\n<li>chore(deps): bump github/codeql-action from 4.35.5 to 4.36.0 c4ce2bb364dbfb781059e628572d7177ba191cc4 (dependabot[bot])</li>\n<li>chore(deps): bump actions/stale from 10.2.0 to 10.3.0 3892dc2a11b2e111acddcbc55d5a4733ba461f20 (dependabot[bot])</li>\n<li>chore(deps): bump github/codeql-action from 4.35.4 to 4.35.5 c4bbb6263f59fe541acd75ce0b508034c65899e1 (dependabot[bot])</li>\n<li>chore(deps): bump golang.org/x/crypto from 0.50.0 to 0.51.0 a0d7f16b58aa4cb9dbaf8c37055faa28b1b350ae (dependabot[bot])</li>\n<li>chore(deps): bump github/codeql-action from 4.35.3 to 4.35.4 8a3de054b5ab1b59f60c790fad39861e294671f1 (dependabot[bot])</li>\n<li>fix(upstream): upgrade to cli-utils 1.2.1, controller-runtime 0.24.1 and k8s 1.36.1 57a4803bd4953d8ef9d51d927f492ecaaf5df9db (Matheus Pimenta)</li>\n<li>chore(deps): bump github.com/fluxcd/cli-utils from 1.2.0 to 1.2.1 b33ae02b9cd7fcba804391ab3d364739cb2a8780 (dependabot[bot])</li>\n</ul>\n<p><strong>Full Changelog</strong>: <a href=\"https://github.com/helm/helm/compare/v4.2.0...v4.2.1\">https://github.com/helm/helm/compare/v4.2.0...v4.2.1</a></p>",
-      "tags": [
-        "kubernetes",
-        "packaging"
-      ]
     }
   ]
 }

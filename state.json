@@ -1,63 +1,171 @@
 {
   "projects": {
     "https://github.com/apache/kafka/releases.atom": {
-      "last_seen": "tag:github.com,2008:Repository/2211243/4.3.2-rc3",
-      "checked_at": "2026-10-19T15:21:25.765Z"
+      "last_seen": "tag:github.com,2008:Repository/2211243/4.3.2",
+      "checked_at": "2026-10-26T14:56:19.124Z"
     },
     "redpanda-data/kminion": {
-      "last_seen": "v2.3.6",
-      "checked_at": "2026-10-19T15:21:26.531Z"
+      "last_seen": "v2.3.8",
+      "checked_at": "2026-10-26T14:56:19.381Z"
     },
     "kubernetes/kubernetes": {
       "last_seen": "v1.37.1",
-      "checked_at": "2026-10-19T15:21:26.692Z"
+      "checked_at": "2026-10-26T14:56:19.470Z"
     },
     "helm/helm": {
       "last_seen": "v4.3.1",
-      "checked_at": "2026-10-19T15:21:26.872Z"
+      "checked_at": "2026-10-26T14:56:19.594Z"
     },
     "argoproj/argo-cd": {
-      "last_seen": "v3.5.5",
-      "checked_at": "2026-10-19T15:21:27.010Z"
+      "last_seen": "v3.5.6",
+      "checked_at": "2026-10-26T14:56:19.687Z"
     },
     "cert-manager/cert-manager": {
-      "last_seen": "v1.21.2",
-      "checked_at": "2026-10-19T15:21:27.159Z"
+      "last_seen": "v1.21.3",
+      "checked_at": "2026-10-26T14:56:19.800Z"
     },
     "kubernetes-sigs/external-dns": {
-      "last_seen": "v0.23.0",
-      "checked_at": "2026-10-19T15:21:27.302Z"
+      "last_seen": "v0.24.0",
+      "checked_at": "2026-10-26T14:56:19.863Z"
     },
     "prometheus/prometheus": {
-      "last_seen": "v3.15.0",
-      "checked_at": "2026-10-19T15:21:27.478Z"
+      "last_seen": "v3.15.1",
+      "checked_at": "2026-10-26T14:56:19.989Z"
     },
     "prometheus-operator/prometheus-operator": {
-      "last_seen": "v0.94.1",
-      "checked_at": "2026-10-19T15:21:27.666Z"
+      "last_seen": "v0.94.2",
+      "checked_at": "2026-10-26T14:56:20.136Z"
     },
     "kubernetes/kube-state-metrics": {
       "last_seen": "v2.20.0",
-      "checked_at": "2026-10-19T15:21:27.835Z"
+      "checked_at": "2026-10-26T14:56:20.233Z"
     },
     "thanos-io/thanos": {
       "last_seen": "v0.42.4",
-      "checked_at": "2026-10-19T15:21:27.979Z"
+      "checked_at": "2026-10-26T14:56:20.293Z"
     },
     "grafana/mimir": {
-      "last_seen": "mimir-3.2.2",
-      "checked_at": "2026-10-19T15:21:28.228Z"
+      "last_seen": "mimir-3.2.3",
+      "checked_at": "2026-10-26T14:56:20.419Z"
     },
     "grafana/grafana": {
       "last_seen": "v13.2.4",
-      "checked_at": "2026-10-19T15:21:28.420Z"
+      "checked_at": "2026-10-26T14:56:20.565Z"
     },
     "https://console.warpstream.com/agent-changelog.rss": {
-      "last_seen": "https://docs.warpstream.com/warpstream/overview/change-log#release-v851",
-      "checked_at": "2026-10-19T15:21:26.231Z"
+      "last_seen": "https://docs.warpstream.com/warpstream/overview/change-log#release-v852",
+      "checked_at": "2026-10-26T14:56:19.248Z"
     }
   },
   "feed_items": [
+    {
+      "title": "Weekly Digest — 2026-10-26",
+      "link": "https://rickyf115.github.io/oss-feed/",
+      "guid": "https://rickyf115.github.io/oss-feed/digest/2026-10-26",
+      "guidIsPermalink": false,
+      "pubDate": "Mon, 26 Oct 2026 14:56:20 GMT",
+      "description": "<h3>kubernetes</h3>\n<ul>\n  <li><a href=\"https://github.com/argoproj/argo-cd/releases/tag/v3.5.6\">ArgoCD v3.5.6</a></li>\n  <li><a href=\"https://github.com/cert-manager/cert-manager/releases/tag/v1.21.3\">cert-manager v1.21.3</a></li>\n  <li><a href=\"https://github.com/kubernetes-sigs/external-dns/releases/tag/v0.24.0\">external-dns v0.24.0</a></li>\n</ul>\n\n<h3>observability</h3>\n<ul>\n  <li><a href=\"https://github.com/prometheus/prometheus/releases/tag/v3.15.1\">Prometheus v3.15.1</a></li>\n  <li><a href=\"https://github.com/prometheus-operator/prometheus-operator/releases/tag/v0.94.2\">Prometheus Operator v0.94.2</a></li>\n  <li><a href=\"https://github.com/grafana/mimir/releases/tag/mimir-3.2.3\">Grafana Mimir mimir-3.2.3</a></li>\n</ul>\n\n<h3>streaming</h3>\n<ul>\n  <li><a href=\"https://github.com/apache/kafka/releases/tag/4.3.2\">Apache Kafka — 4.3.2</a></li>\n  <li><a href=\"https://docs.warpstream.com/warpstream/overview/change-log#release-v852\">Warpstream Agent — WarpStream Agent v852</a></li>\n  <li><a href=\"https://github.com/redpanda-data/kminion/releases/tag/v2.3.8\">Kafka Minion v2.3.8</a></li>\n</ul>",
+      "tags": []
+    },
+    {
+      "title": "ArgoCD v3.5.6",
+      "link": "https://github.com/argoproj/argo-cd/releases/tag/v3.5.6",
+      "guid": "https://github.com/argoproj/argo-cd/releases/tag/v3.5.6",
+      "pubDate": "Tue, 20 Oct 2026 19:26:34 GMT",
+      "description": "<h2>Quick Start</h2>\n<h3>Non-HA:</h3>\n<pre><code>kubectl create namespace argocd\nkubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.5.6/manifests/install.yaml</code></pre>\n<h3>HA:</h3>\n<pre><code>kubectl create namespace argocd\nkubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.5.6/manifests/ha/install.yaml</code></pre>\n<h2>Release Signatures and Provenance</h2>\n<p>All Argo CD container images are signed by cosign.  A Provenance is generated for container images and CLI binaries which meet the SLSA Level 3 specifications. See the <a href=\"https://argo-cd.readthedocs.io/en/stable/operator-manual/signed-release-assets\">documentation</a> on how to verify.</p>\n<h2>Release Notes Blog Post</h2>\n<p>For a detailed breakdown of the key changes and improvements in this release, check out the <a href=\"https://blog.argoproj.io/argo-cd-v3-5-release-candidate-02b1fbf7b419\">official blog post</a></p>\n<h2>Upgrading</h2>\n<p>If upgrading from a different minor version, be sure to read the <a href=\"https://argo-cd.readthedocs.io/en/stable/operator-manual/upgrading/overview/\">upgrading</a> documentation.</p>\n<h2>Changelog</h2>\n<h3>Bug fixes</h3>\n<ul>\n<li>f62e0c6ae135accd040a7bd2f1031c3a9def3f60: fix(grpc): a workaround to fix SRV <em>grpclb.</em>tcp SRV lookups (#29989) (cherry-pick #30084 for 3.5) (#30170) (@argo-cd-cherry-pick-bot[bot])</li>\n<li>d98924dfc0c88fe60302dd57259d6a52c7ff81df: fix: restore SSH repository fetch through a SOCKS5 proxy  (cherry-pick #30238 for 3.5) (#30246) (@argo-cd-cherry-pick-bot[bot])</li>\n<li>d575730dffdf260ab15a73a810a4edfdd8b2dd48: fix: server-side diff reports fields removed by other managers as diffs (cherry-pick #30206 for 3.5) (#30229) (@argo-cd-cherry-pick-bot[bot])</li>\n</ul>\n<h3>Dependency updates</h3>\n<ul>\n<li>cad84a82c63c51e0e025d5c7770fdc1795c51880: chore(deps): bump dompurify for release-3.5 (#30176) (@ranakan19)</li>\n<li>940d00e1ff3d1adf5d0cc2d53e679bd58e8c3185: chore(deps): update group golang to v1.26.10 (release-3.5) (#30305) (@argoproj-renovate[bot])</li>\n</ul>\n<h3>Other work</h3>\n<ul>\n<li>c2b1e3017e2cec86b122172e861dcd026453ae44: chore: bump version to 3.5.6 on release-3.5 branch (#30319) (@github-actions[bot])</li>\n</ul>\n<p><strong>Full Changelog</strong>: <a href=\"https://github.com/argoproj/argo-cd/compare/v3.5.5...v3.5.6\">https://github.com/argoproj/argo-cd/compare/v3.5.5...v3.5.6</a></p>\n<p>&lt;a href=\"<a href=\"https://argoproj.github.io/cd/\">https://argoproj.github.io/cd/</a>\"&gt;&lt;img src=\"<a href=\"https://raw.githubusercontent.com/argoproj/argo-site/master/content/pages/cd/gitops-cd.png\">https://raw.githubusercontent.com/argoproj/argo-site/master/content/pages/cd/gitops-cd.png</a>\" width=\"25%\" &gt;&lt;/a&gt;</p>",
+      "tags": [
+        "kubernetes",
+        "gitops"
+      ]
+    },
+    {
+      "title": "cert-manager v1.21.3",
+      "link": "https://github.com/cert-manager/cert-manager/releases/tag/v1.21.3",
+      "guid": "https://github.com/cert-manager/cert-manager/releases/tag/v1.21.3",
+      "pubDate": "Fri, 23 Oct 2026 20:47:13 GMT",
+      "description": "<p>cert-manager is the easiest way to automatically manage certificates in Kubernetes and OpenShift clusters.</p>\n<p>v1.21.3 removes trust in the compromised eMudhra CA (see <a href=\"https://cert-manager.io/docs/trust/trust-manager/#emudhra-compromise\">eMudhra Compromise</a>). The updated base images no longer include the \"emSign ECC Root CA - G3\" root certificate. Go 1.26.10 also makes <code>crypto/x509</code> reject certificate chains that pass through the compromised intermediates (<a href=\"https://pkg.go.dev/vuln/GO-2026-6809\">CVE-2026-111943</a>).</p>\n<p>It also fixes an ACME ARI renewal loop, stops the controller copying a private key from a Secret that the Certificate does not own, and quotes the proxy values in the Helm chart. It updates Go and several dependencies to fix reported security vulnerabilities.</p>\n<p>All users should upgrade.</p>\n<h2>Changes by Kind</h2>\n<h3>Bug or Regression</h3>\n<ul>\n<li>Added <code>status.acme.ari.certID</code> to track issuance of new certs and re-fetch ARI from CA. This fixes a renewal loop where a stale ARI window from the previous certificate triggered repeated re-issuance until the CA rate limit was hit. (#9292, @hjoshi123)</li>\n<li>Helm chart: quote the <code>http_proxy</code>, <code>https_proxy</code> and <code>no_proxy</code> values when rendering the controller Deployment env vars, so values like <code>*.example.com</code> no longer break the manifest. (#9407, @pujitha24)</li>\n<li>The <code>requestmanager</code> and <code>issuing</code> controllers now only consume the Secret named by <code>status.nextPrivateKeySecretName</code> when it carries the <code>cert-manager.io/next-private-key</code> label and is owned by the Certificate, matching the invariant the <code>keymanager</code> controller already enforces. Previously a principal able to write the <code>certificates/status</code> subresource, but not to read Secrets, could name any Secret in the namespace and have its private key copied into <code>spec.secretName</code>. The <code>keymanager</code> controller no longer creates the next private key Secret under the name in <code>status.nextPrivateKeySecretName</code>. It always uses a generated name, records a <code>NotOwned</code> Warning event when the field names a Secret it does not own, and repoints the field at the Secret it owns rather than deleting that Secret when the two disagree. The Secret named by <code>spec.secretName</code> is never treated as a next private key Secret, even if <code>spec.secretTemplate</code> labels it as one. (#9368, @wallrj)</li>\n</ul>\n<h3>Other (Cleanup or Flake)</h3>\n<ul>\n<li>Upgrade Go to 1.26.9, fixing CVEs in the crypto/tls, net/http, net/textproto and html/template packages. (#9444, @wallrj-cyberark)</li>\n<li>Upgrade Go to 1.26.10, fixing a CVE in the crypto/x509 package. (#9501, @wallrj-cyberark)</li>\n<li>Bump <code>golang.org/x/net</code> to v0.60.0 to fix reported security vulnerabilities (#9451)</li>\n<li>Bump <code>go.opentelemetry.io/otel/exporters/otlp/otlptrace</code> and <code>otlptracegrpc</code> to v1.45.0 to fix a reported security vulnerability (#9374, #9375)</li>\n<li>Update distroless base images, removing the compromised \"emSign ECC Root CA - G3\" root certificate (#9351, #9414, #9493, #9495)</li>\n</ul>",
+      "tags": [
+        "kubernetes",
+        "security"
+      ]
+    },
+    {
+      "title": "external-dns v0.24.0",
+      "link": "https://github.com/kubernetes-sigs/external-dns/releases/tag/v0.24.0",
+      "guid": "https://github.com/kubernetes-sigs/external-dns/releases/tag/v0.24.0",
+      "pubDate": "Fri, 23 Oct 2026 13:44:15 GMT",
+      "description": "<p>It's recommended to try this version with <code>--dry-run=true</code> first, see <a href=\"https://kubernetes-sigs.github.io/external-dns/latest/docs/version-update-playbook/\">upgrade instructions</a>.</p>\n<p><strong>Action required before upgrade</strong></p>\n<ul>\n<li>:warning: <code>gateway-tcproute</code> source now watches TCPRoute <code>v1</code> (#6755).</li>\n</ul>\n<p>  - Requires Gateway API CRDs &gt;= v1.6.0.</p>\n<ul>\n<li>:warning: <code>skipper-routegroup</code> source now uses informers (#6714): the RouteGroup CRD must be installed.</li>\n</ul>\n<p>  - :information_source: <code>.Metadata</code> in <code>--fqdn-template</code> is deprecated: use <code>{{.Name}}</code> instead of <code>{{.Metadata.Name}}</code>.</p>\n<ul>\n<li>:warning: <code>DNSEndpoint</code> and <code>DNSRecord</code> CRDs are now validated at admission (#6620).</li>\n</ul>\n<p>  - Re-apply the CRDs. Existing objects violating the new rules cannot be updated until fixed.</p>\n<ul>\n<li>:warning: Packagers: version ldflags moved to <code>sigs.k8s.io/external-dns/pkg/version.{Version,GitCommit}</code> (#6774).</li>\n</ul>\n<p>  - The old path builds fine but reports version <code>unknown</code>.</p>\n<p><strong>Important</strong></p>\n<ul>\n<li>:information<em>source: </em>gateway-httproute_: a hostname from annotation or FQDN template now suppresses the listener hostname fallback (#6746).</li>\n</ul>\n<p>  - With <code>--policy=sync</code>, wildcard or listener records previously created this way get deleted.</p>\n<ul>\n<li>:information<em>source: </em>scaleway_: <code>ALIAS</code> records are now read back, and apex <code>CNAME</code> are created as <code>ALIAS</code> (#6543).</li>\n</ul>\n<p>  - With <code>--registry=noop</code> and <code>--policy=sync</code>, pre-existing <code>ALIAS</code> records may be updated or deleted.</p>\n<ul>\n<li>:information_source: <code>--namespace</code> accepts multiple values (<code>--namespace=a,b</code>) for <code>service</code> and <code>crd</code> sources (#6763, #6764).</li>\n</ul>\n<p>  - <code>Config.Namespace</code> is now <code>Config.Namespaces []string</code> for importers of <code>pkg/apis/externaldns</code>.</p>\n<ul>\n<li>:information_source: <code>$KUBECONFIG</code> is now honored, and <code>--server</code> is no longer ignored in-cluster (#6736).</li>\n<li>:information_source: Endpoints without targets are now skipped instead of crashing providers (#6752).</li>\n<li>:information<em>source: </em>coredns_: deleting a record now also deletes its TXT registry entry (#6747).</li>\n</ul>\n<p>  - TXT entries orphaned by earlier versions remain in etcd; remove them manually.</p>\n<h2>:warning: Breaking Changes</h2>\n<ul>\n<li>[config] accept multiple values in --namespace by @mloiseleur in #6763</li>\n<li>[gateway] let a hostname annotation suppress the listener fallback by @KR-Ravindra in #6746</li>\n<li>[pkg] move version info into leaf pkg/version by @mrueg in #6774</li>\n<li>[scaleway] support ALIAS records for zone apex and alias annotation by @vdhpieter in #6543</li>\n<li>[source] migrate TCPRoute source to Gateway API v1 by @pratikwayal01 in #6755</li>\n<li>[source] skipper-routegroup refactored to use client-go informers by @szuecs in #6714</li>\n</ul>\n<h2>:rocket: Features</h2>\n<ul>\n<li>[awssd] support dual-stack load balancer aliases by @dlanov in #6665</li>\n<li>[client] honor $KUBECONFIG and apply --server to in-cluster config by @vflaux in #6736</li>\n<li>[controller] report sync outcome to a DNSEndpoint status writer by @mloiseleur in #6767</li>\n<li>[crd] validate DNSEndpoint schema at admission by @mloiseleur in #6620</li>\n<li>[crd] wire DNSEndpoint status-sync client (log-only) by @ivankatliarchuk in #6760</li>\n<li>[events] emit RecordDeleted using the registry resource label by @mloiseleur in #6766</li>\n<li>[rfc2136] insecure axfr upstream by @dembykumorion in #6519</li>\n<li>[rfc2136] support TLSA records by @rissson in #6721</li>\n<li>[source] watch multiple namespaces in service and crd sources by @mloiseleur in #6764</li>\n</ul>\n<h2>:bug: Bug fixes</h2>\n<ul>\n<li>[coredns] delete endpoint should also delete the registry TXT entry by @mloiseleur in #6747</li>\n<li>[endpoint] reject endpoints without targets by @mloiseleur in #6752</li>\n<li>[gateway] stop applying --annotation-filter to ListenerSets by @cyril-corbon in #6794</li>\n<li>[mx] keep null MX and strip trailing dot by @mloiseleur in #6661</li>\n<li>[source] keep RefObjects on endpoints built from --default-targets by @mloiseleur in #6765</li>\n<li>[targetfiltersource] skip network address filtering for non-address records by @castorw in #6366</li>\n</ul>\n<h2>:memo: Documentation</h2>\n<ul>\n<li>[proposal] generic target-from resource dereference by @mloiseleur in #6536</li>\n<li>[proposal] record rejected multi-provider CRD design by @mloiseleur in #6512</li>\n<li>[webhook] add DNScale provider by @dnscale-ops in #6828</li>\n<li>document multi-cluster shared DNS records guide by @mloiseleur in #6608</li>\n<li>enable version warning banner for outdated documentation versions by @Sun-Wukhan in #6790</li>\n</ul>\n<h2>:package: Docker Image</h2>\n<pre><code># This pull command only works when it's released\ndocker pull registry.k8s.io/external-dns/external-dns:v0.24.0</code></pre>\n<h2>:package: Others</h2>\n<p>&lt;details&gt;&lt;summary&gt;chore&lt;/summary&gt;</p>\n<ul>\n<li>[release] updates kustomize &amp; docs with v0.23.0 by @mloiseleur in #6740</li>\n<li>update to go 1.27.3 by @Raffo in #6825</li>\n</ul>\n<p>&lt;/details&gt;</p>\n<p>&lt;details&gt;&lt;summary&gt;ci&lt;/summary&gt;</p>\n<ul>\n<li>[build] keep multi-arch image build temp files off /tmp by @mloiseleur in #6832</li>\n<li>add Go dependency license check workflow by @ivankatliarchuk in #6334</li>\n</ul>\n<p>&lt;/details&gt;</p>\n<p>&lt;details&gt;&lt;summary&gt;deps&lt;/summary&gt;</p>\n<ul>\n<li>[go] remove dependabot ignore by @ivankatliarchuk in #6742</li>\n<li>bump gitpython from 3.1.60 to 3.1.62 in /docs/scripts by @app/dependabot in #6782</li>\n<li>bump mkdocs-git-revision-date-localized-plugin from 1.5.4 to 1.6.0 in /docs/scripts in the mkdocs-deps group by @app/dependabot in #6743</li>\n<li>bump the dev-dependencies group across 1 directory with 11 updates by @app/dependabot in #6831</li>\n<li>bump the dev-dependencies group with 18 updates by @app/dependabot in #6784</li>\n<li>bump the dev-dependencies group with 19 updates by @app/dependabot in #6813</li>\n<li>bump the dev-dependencies group with 3 updates by @app/dependabot in #6744</li>\n<li>bump the dev-dependencies group with 5 updates by @app/dependabot in #6745</li>\n<li>bump the dev-dependencies group with 5 updates by @app/dependabot in #6779</li>\n<li>bump the dev-dependencies group with 7 updates by @app/dependabot in #6756</li>\n<li>bump the dev-dependencies group with 7 updates by @app/dependabot in #6795</li>\n<li>bump urllib3 from 2.7.0 to 2.8.0 in /docs/scripts by @app/dependabot in #6781</li>\n</ul>\n<p>&lt;/details&gt;</p>\n<p>&lt;details&gt;&lt;summary&gt;perf&lt;/summary&gt;</p>\n<ul>\n<li>[registry] compute only the TXT name when checking for missing records by @spicysharkco in #6805</li>\n</ul>\n<p>&lt;/details&gt;</p>\n<p>&lt;details&gt;&lt;summary&gt;refactor&lt;/summary&gt;</p>\n<ul>\n<li>[endpoint] drop dependency on pkg/events by @mrueg in #6775</li>\n<li>[exoscale] reduce ApplyChanges cyclomatic complexity by @somaz94 in #6709</li>\n<li>[plan] drop go-cmp from HasChanges by @mrueg in #6773</li>\n<li>[source] use ListIndexed helper for indexer scans by @ivankatliarchuk in #6759</li>\n<li>standardise on internal/sets by @mloiseleur in #6735</li>\n</ul>\n<p>&lt;/details&gt;</p>\n<p>&lt;details&gt;&lt;summary&gt;test&lt;/summary&gt;</p>\n<ul>\n<li>[provider/aws] store DNS names in the Route 53 stub lowercased by @thc1006 in #6705</li>\n<li>[source] cover legacy compatibility endpoints by @pratikwayal01 in #6789</li>\n<li>[testifylint] enable require-error checker by @andrew-c-hay in #6637</li>\n</ul>\n<p>&lt;/details&gt;</p>\n<ul>\n<li>Bump Go to 1.27.2 by @Raffo in #6804</li>\n</ul>",
+      "tags": [
+        "kubernetes",
+        "networking"
+      ]
+    },
+    {
+      "title": "Prometheus v3.15.1",
+      "link": "https://github.com/prometheus/prometheus/releases/tag/v3.15.1",
+      "guid": "https://github.com/prometheus/prometheus/releases/tag/v3.15.1",
+      "pubDate": "Wed, 21 Oct 2026 16:15:57 GMT",
+      "description": "<ul>\n<li>[SECURITY] Container images: Update CA certificates to distrust \"emSign ECC Root CA - G3\" and \"Comodo AAA Services root\" following the compromise of eMudhra intermediate CA private keys.</li>\n<li>[SECURITY] Build with Go 1.27.3 to fix vulnerabilities in <code>net/http</code>, <code>net/textproto</code>, <code>crypto/tls</code> and <code>html/template</code>.</li>\n<li>[SECURITY] Bump golang.org/x/net to v0.60.0 to fix HTTP/2 vulnerabilities (GO-2026-6603, GO-2026-6610, GO-2026-6611, GO-2026-6612, GO-2026-6617).</li>\n</ul>",
+      "tags": [
+        "observability",
+        "metrics"
+      ]
+    },
+    {
+      "title": "Prometheus Operator v0.94.2",
+      "link": "https://github.com/prometheus-operator/prometheus-operator/releases/tag/v0.94.2",
+      "guid": "https://github.com/prometheus-operator/prometheus-operator/releases/tag/v0.94.2",
+      "pubDate": "Fri, 23 Oct 2026 08:50:26 GMT",
+      "description": "<ul>\n<li>[SECURITY] Rebuild with latest <code>quay.io/prometheus/busybox</code> base images to remove the <code>Comodo AAA Services root</code> and <code>emSign ECC Root CA - G3</code> root CAs. #8907</li>\n<li>[SECURITY] Rebuild with Go 1.27.3 to fix various vulnerabilities. #8907</li>\n</ul>",
+      "tags": [
+        "observability",
+        "kubernetes"
+      ]
+    },
+    {
+      "title": "Grafana Mimir mimir-3.2.3",
+      "link": "https://github.com/grafana/mimir/releases/tag/mimir-3.2.3",
+      "guid": "https://github.com/grafana/mimir/releases/tag/mimir-3.2.3",
+      "pubDate": "Thu, 22 Oct 2026 11:54:46 GMT",
+      "description": "<p>This release contains 6 PRs from 3 authors. Thank you!</p>\n<h1>Changelog</h1>\n<h2>3.2.3</h2>\n<h3>Grafana Mimir</h3>\n<ul>\n<li>[BUGFIX] Upgrade Go to 1.26.10 and update distroless runtime images to address compromised CA trust (CVE-2026-111943). #16939</li>\n<li>[BUGFIX] Update <code>golang.org/x/net</code> to v0.60.0 for HTTP/2 security fixes. #16832</li>\n<li>[BUGFIX] Upgrade Go to 1.26.9 to address <a href=\"https://pkg.go.dev/vuln/GO-2026-6604\">CVE-2026-56857</a>, <a href=\"https://pkg.go.dev/vuln/GO-2026-6605\">CVE-2026-56866</a>, <a href=\"https://pkg.go.dev/vuln/GO-2026-6603\">CVE-2026-78659</a>, <a href=\"https://pkg.go.dev/vuln/GO-2026-6610\">CVE-2026-78660</a>, <a href=\"https://pkg.go.dev/vuln/GO-2026-6612\">CVE-2026-78663</a>, <a href=\"https://pkg.go.dev/vuln/GO-2026-6609\">CVE-2026-78667</a>, <a href=\"https://pkg.go.dev/vuln/GO-2026-6611\">CVE-2026-78669</a>, <a href=\"https://pkg.go.dev/vuln/GO-2026-6613\">CVE-2026-94439</a>, <a href=\"https://pkg.go.dev/vuln/GO-2026-6608\">CVE-2026-94440</a>, <a href=\"https://pkg.go.dev/vuln/GO-2026-6599\">CVE-2026-94448</a>, <a href=\"https://pkg.go.dev/vuln/GO-2026-6600\">CVE-2026-97030</a>, <a href=\"https://pkg.go.dev/vuln/GO-2026-6607\">CVE-2026-97031</a>, and <a href=\"https://pkg.go.dev/vuln/GO-2026-6617\">CVE-2026-97032</a>. #16861 #16884</li>\n</ul>\n<p><strong>All changes in this release</strong>: <a href=\"https://github.com/grafana/mimir/compare/mimir-3.2.2...mimir-3.2.3\">https://github.com/grafana/mimir/compare/mimir-3.2.2...mimir-3.2.3</a></p>",
+      "tags": [
+        "observability",
+        "metrics"
+      ]
+    },
+    {
+      "title": "Apache Kafka — 4.3.2",
+      "link": "https://github.com/apache/kafka/releases/tag/4.3.2",
+      "guid": "tag:github.com,2008:Repository/2211243/4.3.2",
+      "pubDate": "Tue, 20 Oct 2026 12:09:55 GMT",
+      "description": "<p>Apache Kafka 4.3.2 release</p>",
+      "tags": [
+        "streaming",
+        "backend"
+      ]
+    },
+    {
+      "title": "Warpstream Agent — WarpStream Agent v852",
+      "link": "https://docs.warpstream.com/warpstream/overview/change-log#release-v852",
+      "guid": "https://docs.warpstream.com/warpstream/overview/change-log#release-v852",
+      "pubDate": "Wed, 21 Oct 2026 18:18:34 GMT",
+      "description": "<ul><li>Tableflow:</li><li>  Tune blob store retries so that compaction and deletion jobs are more resilient to intermittent failures.</li><li>Schema Registry: Fix possible race when compiling Protobuf schemas with references.</li><li>Schema Validation: Add eviction policy with a TTL of 1 hour for the schemas cached by the agent when validating.</li><li>Refresh missing SASL credentials more frequently so newly created credentials become available sooner.</li><li>Log expected file-cache actor deadline expirations with less than 500ms of caller budget at info (debug below 50ms) with clearer context, while keeping actionable failures at error.</li><li>Log deadscanner delete failures at error level so they are forwarded to the control plane.</li><li>Bump build to go `1.27.3` to fix CVE-2026-111943.</li><li>Replace the `rand.Rand` created on every Fetch request with lock-free top-level `rand` functions.</li><li>Reuse zstd compression contexts across calls instead of creating a new compressor for every Kafka batch, reducing allocations on produce, compaction, and fetch paths.</li><li>Better spread small (batched) file-cache reads across agents.</li></ul>",
+      "tags": [
+        "streaming",
+        "backend"
+      ]
+    },
+    {
+      "title": "Kafka Minion v2.3.8",
+      "link": "https://github.com/redpanda-data/kminion/releases/tag/v2.3.8",
+      "guid": "https://github.com/redpanda-data/kminion/releases/tag/v2.3.8",
+      "pubDate": "Thu, 22 Oct 2026 19:53:13 GMT",
+      "description": "<h2>Changelog</h2>\n<ul>\n<li>f540f9eb56b527592410cb9eab0ef53f882c3994: build: bump Go to 1.26.10 (@sbocinec)</li>\n<li>93a568dff7a5f4f7e25b8b0697751fa285f98fca: Merge pull request #357 from redpanda-data/st/go-1.26.10 (@sbocinec)</li>\n</ul>\n<h2>Docker Image</h2>\n<p>Use the following command to pull this release's Docker image:</p>\n<pre><code>docker pull redpandadata/kminion:v2.3.8</code></pre>",
+      "tags": [
+        "streaming",
+        "observability"
+      ]
+    },
     {
       "title": "Weekly Digest — 2026-10-19",
       "link": "https://rickyf115.github.io/oss-feed/",
@@ -1013,112 +1121,6 @@
         "kubernetes",
         "security"
       ]
-    },
-    {
-      "title": "Grafana Mimir mimir-3.1.2",
-      "link": "https://github.com/grafana/mimir/releases/tag/mimir-3.1.2",
-      "guid": "https://github.com/grafana/mimir/releases/tag/mimir-3.1.2",
-      "pubDate": "Wed, 24 Jun 2026 11:20:38 GMT",
-      "description": "<p>This release contains 3 PRs from 1 authors. Thank you!</p>\n<h1>Changelog</h1>\n<h2>3.1.2</h2>\n<h3>Grafana Mimir</h3>\n<ul>\n<li>[BUGFIX] Ingest storage: Cap maximum Kafka protocol version, the client negotiates with the broker to v3.9.0. #15745</li>\n</ul>\n<p><strong>All changes in this release</strong>: <a href=\"https://github.com/grafana/mimir/compare/mimir-3.1.1...mimir-3.1.2\">https://github.com/grafana/mimir/compare/mimir-3.1.1...mimir-3.1.2</a></p>",
-      "tags": [
-        "observability",
-        "metrics"
-      ]
-    },
-    {
-      "title": "Apache Kafka — 4.3.1",
-      "link": "https://github.com/apache/kafka/releases/tag/4.3.1",
-      "guid": "tag:github.com,2008:Repository/2211243/4.3.1",
-      "pubDate": "Tue, 23 Jun 2026 21:27:59 GMT",
-      "description": "<p>Apache Kafka 4.3.1 release</p>",
-      "tags": [
-        "streaming",
-        "backend"
-      ]
-    },
-    {
-      "title": "Warpstream Agent — WarpStream Agent v812",
-      "link": "https://docs.warpstream.com/warpstream/overview/change-log#release-v812",
-      "guid": "https://docs.warpstream.com/warpstream/overview/change-log#release-v812",
-      "pubDate": "Tue, 23 Jun 2026 01:01:35 GMT",
-      "description": "<ul><li>Move orbit consumer offset copying job entirely into the agents.</li></ul>",
-      "tags": [
-        "streaming",
-        "backend"
-      ]
-    },
-    {
-      "title": "Weekly Digest — 2026-06-22",
-      "link": "https://rickyf115.github.io/oss-feed/",
-      "guid": "https://rickyf115.github.io/oss-feed/digest/2026-06-22",
-      "guidIsPermalink": false,
-      "pubDate": "Mon, 22 Jun 2026 13:37:30 GMT",
-      "description": "<h3>kubernetes</h3>\n<ul>\n  <li><a href=\"https://github.com/helm/helm/releases/tag/v4.2.2\">Helm v4.2.2</a></li>\n  <li><a href=\"https://github.com/argoproj/argo-cd/releases/tag/v3.4.4\">ArgoCD v3.4.4</a></li>\n</ul>\n\n<h3>observability</h3>\n<ul>\n  <li><a href=\"https://github.com/prometheus-operator/prometheus-operator/releases/tag/v0.92.0\">Prometheus Operator v0.92.0</a></li>\n</ul>\n\n<h3>streaming</h3>\n<ul>\n  <li><a href=\"https://github.com/apache/kafka/releases/tag/4.3.1-rc2\">Apache Kafka — 4.3.1-rc2</a></li>\n  <li><a href=\"https://docs.warpstream.com/warpstream/overview/change-log#release-v810\">Warpstream Agent — WarpStream Agent v810</a></li>\n</ul>",
-      "tags": []
-    },
-    {
-      "title": "Helm v4.2.2",
-      "link": "https://github.com/helm/helm/releases/tag/v4.2.2",
-      "guid": "https://github.com/helm/helm/releases/tag/v4.2.2",
-      "pubDate": "Wed, 17 Jun 2026 20:50:16 GMT",
-      "description": "<p>Helm v4.2.2 is a patch release. Users are encouraged to upgrade for the best experience.</p>\n<p>The community keeps growing, and we'd love to see you there!</p>\n<ul>\n<li>Join the discussion in <a href=\"https://kubernetes.slack.com\">Kubernetes Slack</a>:</li>\n</ul>\n<p>  -  for questions and just to hang out</p>\n<p>  -  for discussing PRs, code, and bugs</p>\n<ul>\n<li>Hang out at the Public Developer Call: Thursday, 9:30 Pacific via <a href=\"https://zoom.us/j/696660622\">Zoom</a></li>\n<li>Test, debug, and contribute charts: <a href=\"https://artifacthub.io/packages/search?kind=0\">ArtifactHub/packages</a></li>\n</ul>\n<h2>Notable Changes</h2>\n<ul>\n<li>Revert: Fixed a race condition in WaitForDelete where the status observer canceled the watch too early, causing intermittent failures when running a full test suite #32214</li>\n</ul>\n<h2>Installation and Upgrading</h2>\n<p>Download Helm v4.2.2. The common platform binaries are here:</p>\n<ul>\n<li><a href=\"https://get.helm.sh/helm-v4.2.2-darwin-amd64.tar.gz\">MacOS amd64</a> (<a href=\"https://get.helm.sh/helm-v4.2.2-darwin-amd64.tar.gz.sha256sum\">checksum</a> / 10c1e36ee8c5f2e2ee25a16599cb03ab74c0953cd889cacb980a49ba4b6574ba)</li>\n<li><a href=\"https://get.helm.sh/helm-v4.2.2-darwin-arm64.tar.gz\">MacOS arm64</a> (<a href=\"https://get.helm.sh/helm-v4.2.2-darwin-arm64.tar.gz.sha256sum\">checksum</a> / 5410a0dae3d5d91f45653b161260d9301aabc4ae80ae50a6605d66884b6df8ea)</li>\n<li><a href=\"https://get.helm.sh/helm-v4.2.2-linux-amd64.tar.gz\">Linux amd64</a> (<a href=\"https://get.helm.sh/helm-v4.2.2-linux-amd64.tar.gz.sha256sum\">checksum</a> / 9adafecab4d406853bba163a70e9f104f47dbbf65ce24b7653bae7e36150bcb6)</li>\n<li><a href=\"https://get.helm.sh/helm-v4.2.2-linux-arm.tar.gz\">Linux arm</a> (<a href=\"https://get.helm.sh/helm-v4.2.2-linux-arm.tar.gz.sha256sum\">checksum</a> / 7e9490169874695e04ab1af47c5620621fc13c84219a258fcc1afdcd40ca7438)</li>\n<li><a href=\"https://get.helm.sh/helm-v4.2.2-linux-arm64.tar.gz\">Linux arm64</a> (<a href=\"https://get.helm.sh/helm-v4.2.2-linux-arm64.tar.gz.sha256sum\">checksum</a> / 78803142087a0069fa4b50d3f32a84d3ef25c14d1ee8a40fbccf86a6216d2f36)</li>\n<li><a href=\"https://get.helm.sh/helm-v4.2.2-linux-386.tar.gz\">Linux i386</a> (<a href=\"https://get.helm.sh/helm-v4.2.2-linux-386.tar.gz.sha256sum\">checksum</a> / 8e1fdcda4a476ffc5d1179c7f16d33a3d54267efa08fd720f7678277d68bc2d5)</li>\n<li><a href=\"https://get.helm.sh/helm-v4.2.2-linux-loong64.tar.gz\">Linux loong64</a> (<a href=\"https://get.helm.sh/helm-v4.2.2-linux-loong64.tar.gz.sha256sum\">checksum</a> / b8bfe96b8b0b0e2af51af4a00ef521cc5a7e03793aea3568cf8500a63ae05041)</li>\n<li><a href=\"https://get.helm.sh/helm-v4.2.2-linux-ppc64le.tar.gz\">Linux ppc64le</a> (<a href=\"https://get.helm.sh/helm-v4.2.2-linux-ppc64le.tar.gz.sha256sum\">checksum</a> / 814a80fd98eb9e4c5a9d610f3b9c15ffe120c2f5e39df16a2f491723ebc90126)</li>\n<li><a href=\"https://get.helm.sh/helm-v4.2.2-linux-s390x.tar.gz\">Linux s390x</a> (<a href=\"https://get.helm.sh/helm-v4.2.2-linux-s390x.tar.gz.sha256sum\">checksum</a> / d84cdf1123f20cfbef19a2af1cd6afe8b00626bd9846bccb9dae978c810c8274)</li>\n<li><a href=\"https://get.helm.sh/helm-v4.2.2-linux-riscv64.tar.gz\">Linux riscv64</a> (<a href=\"https://get.helm.sh/helm-v4.2.2-linux-riscv64.tar.gz.sha256sum\">checksum</a> / f07c105180dff2619ab45134b9b47b7845387e8f3299e12ebe0efb87c7548717)</li>\n<li><a href=\"https://get.helm.sh/helm-v4.2.2-windows-amd64.zip\">Windows amd64</a> (<a href=\"https://get.helm.sh/helm-v4.2.2-windows-amd64.zip.sha256sum\">checksum</a> / 5fad8562e98c34fa5af3ef904086a5874a6701050f9bf36e30238c975df94dcd)</li>\n<li><a href=\"https://get.helm.sh/helm-v4.2.2-windows-arm64.zip\">Windows arm64</a> (<a href=\"https://get.helm.sh/helm-v4.2.2-windows-arm64.zip.sha256sum\">checksum</a> / 2e993d6a1dd8197a33e65d8e90b26df9d248ff3501701dea401856aa265a2dab)</li>\n</ul>\n<p>This release was signed by @gjenkins8 with key BF88 8333 D96A 1C18 E268 2AAE D79D 67C9 EC01 6739, which can be found at <a href=\"https://keys.openpgp.org/vks/v1/by-fingerprint/BF888333D96A1C18E2682AAED79D67C9EC016739\">https://keys.openpgp.org/vks/v1/by-fingerprint/BF888333D96A1C18E2682AAED79D67C9EC016739</a> Please use the attached signatures for verifying this release using gpg.</p>\n<p>The <a href=\"https://helm.sh/docs/intro/quickstart/\">Quickstart Guide</a> will get you going from there. For <strong>upgrade instructions</strong> or detailed installation notes, check the <a href=\"https://helm.sh/docs/intro/install/\">install guide</a>. You can also use a <a href=\"https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-4\">script to install</a> on any system with <code>bash</code>.</p>\n<h2>What's Next</h2>\n<ul>\n<li>4.2.3 and 3.21.2 are the next patch releases scheduled for July 8, 2026</li>\n<li>4.3.0 and 3.22.0 are the next minor releases scheduled for September 9, 2026</li>\n</ul>\n<h2>Changelog</h2>\n<ul>\n<li>Revert \"fix(kube): prevent spurious early exit in WaitForDelete during informer sync\" b05881cf967a5a09e19866799d0edfd40675803a (George Jenkins)</li>\n</ul>\n<p><strong>Full Changelog</strong>: <a href=\"https://github.com/helm/helm/compare/v4.2.1...v4.2.2\">https://github.com/helm/helm/compare/v4.2.1...v4.2.2</a></p>",
-      "tags": [
-        "kubernetes",
-        "packaging"
-      ]
-    },
-    {
-      "title": "ArgoCD v3.4.4",
-      "link": "https://github.com/argoproj/argo-cd/releases/tag/v3.4.4",
-      "guid": "https://github.com/argoproj/argo-cd/releases/tag/v3.4.4",
-      "pubDate": "Thu, 18 Jun 2026 09:36:37 GMT",
-      "description": "<h2>Quick Start</h2>\n<h3>Non-HA:</h3>\n<pre><code>kubectl create namespace argocd\nkubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.4.4/manifests/install.yaml</code></pre>\n<h3>HA:</h3>\n<pre><code>kubectl create namespace argocd\nkubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.4.4/manifests/ha/install.yaml</code></pre>\n<h2>Release Signatures and Provenance</h2>\n<p>All Argo CD container images are signed by cosign.  A Provenance is generated for container images and CLI binaries which meet the SLSA Level 3 specifications. See the <a href=\"https://argo-cd.readthedocs.io/en/stable/operator-manual/signed-release-assets\">documentation</a> on how to verify.</p>\n<h2>Release Notes Blog Post</h2>\n<p>For a detailed breakdown of the key changes and improvements in this release, check out the <a href=\"https://blog.argoproj.io/argo-cd-v3-0-release-candidate-a0b933f4e58f\">official blog post</a></p>\n<h2>Upgrading</h2>\n<p>If upgrading from a different minor version, be sure to read the <a href=\"https://argo-cd.readthedocs.io/en/stable/operator-manual/upgrading/overview/\">upgrading</a> documentation.</p>\n<h2>Changelog</h2>\n<h3>Bug fixes</h3>\n<ul>\n<li>146184ea41fa545e0a084c82f05cfe5bd07a9ff9: fix(health): PromotionStrategy stuck Progressing after no-op re-hydration (#28124) (cherry-pick #28125 for 3.4) (#28135) (@argo-cd-cherry-pick-bot[bot])</li>\n<li>e515f51ab1ca500a165b49ca9ec9c402279b6768: fix(rbac): resolve RBAC regression for project-scoped resources in multi-namespace architecture (#25289) (#26573) (#28062) (@wanddynosios)</li>\n<li>7f2fe9576c6b426f00b04abe6dea55cc9cf634c3: fix(ssd): regression causing diff to error on new objects (#27679) (cherry-pick #27703 for 3.4) (#28241) (@argo-cd-cherry-pick-bot[bot])</li>\n<li>5199ea6cb74471e22b9c007b0c4598575bb37e44: fix: add a lock on clusterinformer (cherry-pick #28216 for 3.4) (#28312) (@blakepettersson)</li>\n<li>7a64081225fe7e9688cd7a3d0ad0ff2bc62fde78: fix: exclude live status from normalization (cherry-pick #28201 for 3.4) (#28204) (@argo-cd-cherry-pick-bot[bot])</li>\n<li>0b3436ffe67564506a49007970daa3d9f476856d: fix: fixes parsing of dex passwords with dollar sign (cherry pick of #28027 to 3.4) (#28197) (@ppapapetrou76)</li>\n<li>9ccf66b8fc4500d90091075debed86dc218a3981: fix: resolve cross-generator Values templates in RenderGeneratorParams (#27827) (cherry-pick #27830 for 3.4) (#28128) (@argo-cd-cherry-pick-bot[bot])</li>\n</ul>\n<h3>Other work</h3>\n<ul>\n<li>14ad471bf6102535664cac3b43cb706904c72b35: Merge pull request #28162 from argoproj/cherry-pick-28158-to-release-3.4 (@dudinea)</li>\n<li>0fd000b25fb94fbc2de25dd3c97417e44d28a629: Merge pull request #28164 from argoproj/cherry-pick-28155-to-release-3.4 (@dudinea)</li>\n<li>ff255193d14b0ab7ecf7bea48c9cfda3cc0de46a: chore(ci): bump codecov action to 7.0.0 to fix the GPG issue (cherry-pick #28159 for 3.4) (#28172) (@dudinea)</li>\n<li>e9ff0c571b905989d517ac377c4071b6b6180081: ci: bump goreleaser (cherry-pick #28033 for 3.4) (#28072) (@argo-cd-cherry-pick-bot[bot])</li>\n<li>1c5e37da077808446895092764bd14312c53d76d: ci: use github release notes in goreleaser (cherry-pick #28048 for 3.4) (#28071) (@argo-cd-cherry-pick-bot[bot])</li>\n<li>0c14cfb5117526dd35657e0fddd21c5c612664be: fix(manifest-generate-paths): Normalize repo before using type repo (#28113) (@fm1ck3y)</li>\n<li>c2003f447e49a183b75e3d94e7982c59c012bd5e: test(e2e): Add test for second Sync after initial for different resources/options (#28156) (#28155) (@dudinea)</li>\n<li>9810fa2902e60e48df2acda2353f44b293d4203f: test(e2e): fix cleanup of CRDs for e2e tests (#28157) (#28158) (@dudinea)</li>\n</ul>\n<p><strong>Full Changelog</strong>: <a href=\"https://github.com/argoproj/argo-cd/compare/v3.4.3...v3.4.4\">https://github.com/argoproj/argo-cd/compare/v3.4.3...v3.4.4</a></p>\n<p>&lt;a href=\"<a href=\"https://argoproj.github.io/cd/\">https://argoproj.github.io/cd/</a>\"&gt;&lt;img src=\"<a href=\"https://raw.githubusercontent.com/argoproj/argo-site/master/content/pages/cd/gitops-cd.png\">https://raw.githubusercontent.com/argoproj/argo-site/master/content/pages/cd/gitops-cd.png</a>\" width=\"25%\" &gt;&lt;/a&gt;</p>",
-      "tags": [
-        "kubernetes",
-        "gitops"
-      ]
-    },
-    {
-      "title": "Prometheus Operator v0.92.0",
-      "link": "https://github.com/prometheus-operator/prometheus-operator/releases/tag/v0.92.0",
-      "guid": "https://github.com/prometheus-operator/prometheus-operator/releases/tag/v0.92.0",
-      "pubDate": "Thu, 18 Jun 2026 09:21:12 GMT",
-      "description": "<blockquote><p>[!NOTE]</p></blockquote>\n<blockquote><p>The <code>PrometheusTopologySharding</code> and <code>PrometheusShardRetentionPolicy</code> feature gates have been promoted to <strong>Beta</strong> in this release and are now enabled by default. See the <a href=\"https://prometheus-operator.dev/docs/platform/sharding/\">sharding documentation</a> for details.</p></blockquote>\n<ul>\n<li>[CHANGE] Add URL validation for the <code>tokenUrl</code> field in OAuth2 configuration across all CRDs. #8579</li>\n<li>[CHANGE] Add URL validation for the <code>url</code> field in <code>RemoteReadSpec</code> in <code>Prometheus</code> CRD. #8596</li>\n<li>[FEATURE] Migrate retention options from CLI flags to the config file for <code>Prometheus</code> CRD (Prometheus &gt;= v3 uses the config file; older versions continue to use CLI flags). #8547</li>\n<li>[FEATURE] Add <code>staleSeriesCompactionThreshold</code> field to <code>TSDBSpec</code> in <code>Prometheus</code> and <code>PrometheusAgent</code> CRDs. #8563</li>\n<li>[FEATURE] Add <code>labelNameUnderscoreSanitization</code> and <code>labelNamePreserveMultipleUnderscores</code> fields to <code>OTLPConfig</code> in <code>Prometheus</code> and <code>PrometheusAgent</code> CRDs. #8562</li>\n<li>[FEATURE] Add <code>payload</code> field to Webhook receiver in <code>AlertmanagerConfig</code> CRD. #8507</li>\n<li>[ENHANCEMENT] Use pod topology labels for zone sharding on Kubernetes &gt;= 1.35 when the <code>PrometheusTopologySharding</code> feature gate is enabled (removes the need for <code>attachMetadata.node=true</code>). #8564</li>\n<li>[ENHANCEMENT] Add validation for the Slack <code>update_message</code> field in Alertmanager configuration Secret. #8556</li>\n<li>[BUGFIX] Validate target labels in <code>Probe</code> static configuration to prevent invalid Prometheus scrape configs. #7901</li>\n<li>[BUGFIX] Fix goroutine leak and data race in <code>pollBasedListerWatcher</code>. #8593</li>\n<li>[BUGFIX] Validate <code>ProxyConfig</code> in OAuth2 configuration. #8610</li>\n<li>[BUGFIX] Fix SMTP smarthost format error handling in Alertmanager configuration. #8586</li>\n<li>[BUGFIX] Fix missing <code>return</code> in admission webhook after marshal failure. #8582</li>\n<li>[BUGFIX] Fix <code>FindOwner</code> to return <code>nil</code> on <code>meta.Accessor</code> error. #8585</li>\n<li>[BUGFIX] Fix dropped gzip <code>Close</code> errors in <code>GzipConfig</code> and <code>GunzipConfig</code>. #8573</li>\n<li>[BUGFIX] Fix panic on malformed key=value flag input (e.g. <code>--labels \"key\"</code>). #8560</li>\n</ul>",
-      "tags": [
-        "observability",
-        "kubernetes"
-      ]
-    },
-    {
-      "title": "Apache Kafka — 4.3.1-rc2",
-      "link": "https://github.com/apache/kafka/releases/tag/4.3.1-rc2",
-      "guid": "tag:github.com,2008:Repository/2211243/4.3.1-rc2",
-      "pubDate": "Wed, 17 Jun 2026 18:29:04 GMT",
-      "description": "<p>4.3.1-rc2</p>",
-      "tags": [
-        "streaming",
-        "backend"
-      ]
-    },
-    {
-      "title": "Warpstream Agent — WarpStream Agent v810",
-      "link": "https://docs.warpstream.com/warpstream/overview/change-log#release-v810",
-      "guid": "https://docs.warpstream.com/warpstream/overview/change-log#release-v810",
-      "pubDate": "Fri, 19 Jun 2026 10:09:17 GMT",
-      "description": "<ul><li>Tableflow:</li><li>  Support sorting and column statistics on `float` and `double` columns.</li><li>Schema Registry: Match Confluent&#39;s protobuf compatibility behavior by allowing a type change on a `oneof` field is now allowed when that field&#39;s `oneof` block is renamed or dissolved.</li></ul>",
-      "tags": [
-        "streaming",
-        "backend"
-      ]
-    },
-    {
-      "title": "Weekly Digest — 2026-06-15",
-      "link": "https://rickyf115.github.io/oss-feed/",
-      "guid": "https://rickyf115.github.io/oss-feed/digest/2026-06-15",
-      "guidIsPermalink": false,
-      "pubDate": "Mon, 15 Jun 2026 17:55:56 GMT",
-      "description": "<h3>streaming</h3>\n<ul>\n  <li><a href=\"https://docs.warpstream.com/warpstream/overview/change-log#release-v807\">Warpstream Agent — WarpStream Agent v807</a></li>\n</ul>",
-      "tags": []
     }
   ]
 }

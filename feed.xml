@@ -5,8 +5,29 @@
     <link>https://rickyf115.github.io/oss-feed/</link>
     <description>Weekly digest of new releases from tracked open source projects</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Nov 2026 18:05:20 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 19:56:53 GMT</lastBuildDate>
     <atom:link href="https://rickyf115.github.io/oss-feed/feed.xml" rel="self" type="application/rss+xml" />
+
+  <item>
+    <title>Weekly Digest — 2026-11-23</title>
+    <link>https://rickyf115.github.io/oss-feed/</link>
+    <guid isPermaLink="false">https://rickyf115.github.io/oss-feed/digest/2026-11-23</guid>
+    <pubDate>Mon, 23 Nov 2026 19:56:53 GMT</pubDate>
+    <description><![CDATA[<h3>streaming</h3>
+<ul>
+  <li><a href="https://docs.warpstream.com/warpstream/overview/change-log#release-v858">Warpstream Agent — WarpStream Agent v858</a></li>
+</ul>]]></description>
+  </item>
+
+  <item>
+    <title>Warpstream Agent — WarpStream Agent v858</title>
+    <link>https://docs.warpstream.com/warpstream/overview/change-log#release-v858</link>
+    <guid isPermaLink="true">https://docs.warpstream.com/warpstream/overview/change-log#release-v858</guid>
+    <pubDate>Wed, 18 Nov 2026 22:01:00 GMT</pubDate>
+    <category>streaming</category>
+    <category>backend</category>
+    <description><![CDATA[<ul><li>Bump build to Go `1.27.4` to fix `CVE-2026-97054`.</li><li>Bump `github.com/apache/thrift` to `v0.25.0` to fix `CVE-2026-63772`, `CVE-2026-82458`, `CVE-2026-83663`, `CVE-2026-66055` and `CVE-2026-94637`.</li><li>Bump agent base image (`cgr.dev/chainguard/wolfi-base`) to fix `CVE-2026-84243` (path traversal vulnerability).</li><li>Double the number of concurrent low priority jobs that Agents running only the `jobs` role can execute. The extra capacity is reserved for LOW priority jobs (L2+ compactions) and is not usable by HIGH priority jobs such as L0 compactions, so it increases compaction throughput without widening the capacity that latency sensitive work can consume. This behavior can be disabled by setting the `-jobsRunnerLowPrioritySlotsAmplification` flag or `WARPSTREAM_JOBS_RUNNER_LOW_PRIORITY_SLOTS_AMPLIFICATION` environment variable to `1.0`.</li><li>Double the write throughput limit of every compaction job on Agents running only the `jobs` role. The control plane assigns each compaction job a write throughput limit so that compactions don&#39;t saturate the network and disrupt the rest of the workload, and Agents running only the `jobs` role serve no Produce or Fetch requests that could be disrupted. The multiplier can be changed for any Agent with the `-compactionWriteThroughputAmplification` flag or `WARPSTREAM_COMPACTION_WRITE_THROUGHPUT_AMPLIFICATION` environment variable, and setting it to `1.0` disables this behavior.</li><li>Fix Fetch requests that hit their byte limit failing with an invariant violation (`shouldLoadDirect returned false, but r.opts.ForceLoadDirect was true`) on Agents that have the `jobs` role but neither the `proxy` nor the `proxy-consume` role. These Agents read from object storage directly instead of through the file cache, and now do so for reads that are not a single contiguous range too.</li><li>Agents that have neither the `proxy` nor the `proxy-consume` role now reject Fetch requests from Kafka clients even when the query engine is enabled. Previously, enabling the query engine (the default on Agents with the `jobs` role) made these Agents accept Fetch requests from any client that reached them, for example through a load balancer in front of all the Agents. The query engine itself is not affected because it reads over in-process connections.</li><li>The Agent&#39;s HTTP produce and fetch endpoints now follow the Agent&#39;s roles the same way the Kafka protocol does. Agents that reject Kafka Produce requests (Agents without the `proxy` or `proxy-produce` role) now also reject requests to `/v1/kafka/produce`, `/topics/{topic}`, `/topics/{topic}/partitions/{partition}` and the Datadog logs intake endpoints, and Agents that reject Kafka Fetch requests now also reject requests to `/v1/kafka/fetch`, `/v1/kafka/fetch_single_record` and `/v1/kafka/topics/{topic}/partitions/{partition}/records/{offset}`. Rejected requests get a `421 Misdirected Request` response carrying the same error as the Kafka protocol (error code 6, not leader or follower). HTTP clients that were sending these requests to Agents without the matching role (for example through a load balancer in front of every Agent) need to target Agents that have it. The same applies to the Produce requests that Agents forward to each other when `enable_produce_forwarding_behind_load_balancer` is enabled: Agents that reject Produce requests now also reject the ones forwarded to them, and Agents now only forward Produce requests to Agents with the `proxy` or `proxy-produce` role (previously they could also forward them to `proxy-consume` Agents in the same Agent group and availability zone).</li><li>Reduce interruption for clients when control plane requests hang in ripcord mode.</li><li>Reduced network traffic between Agents when multiple consumer groups read the same topics, by coalescing duplicate reads and briefly caching recently read data.</li></ul>]]></description>
+  </item>
 
   <item>
     <title>Weekly Digest — 2026-11-16</title>
@@ -4321,43 +4342,6 @@ kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubuse
 <li>[BUGFIX] Packaging: Fix the DEB/RPM packages shipping the <code>mimir</code>, <code>mimirtool</code>, <code>metaconvert</code>, and <code>query-tee</code> binaries without the executable bit set, which caused <code>mimir.service</code> to fail to start. #16166</li>
 </ul>
 <p><strong>All changes in this release</strong>: <a href="https://github.com/grafana/mimir/compare/mimir-3.1.3...mimir-3.1.4">https://github.com/grafana/mimir/compare/mimir-3.1.3...mimir-3.1.4</a></p>]]></description>
-  </item>
-
-  <item>
-    <title>Grafana v13.1.1</title>
-    <link>https://github.com/grafana/grafana/releases/tag/v13.1.1</link>
-    <guid isPermaLink="true">https://github.com/grafana/grafana/releases/tag/v13.1.1</guid>
-    <pubDate>Tue, 21 Jul 2026 10:58:35 GMT</pubDate>
-    <category>observability</category>
-    <category>dashboards</category>
-    <description><![CDATA[<p><a href="https://grafana.com/grafana/download/13.1.1">Download page</a></p>
-<p><a href="https://grafana.com/docs/grafana/latest/whatsnew/">What's new highlights</a></p>
-<h3>Features and enhancements</h3>
-<ul>
-<li><strong>Go:</strong> Update version to 1.26.5 <a href="https://github.com/grafana/grafana/pull/128015">#128015</a>, <a href="https://github.com/macabu">@macabu</a></li>
-<li><strong>Provisioning:</strong> Improve form errors for github connections <a href="https://github.com/grafana/grafana/pull/128177">#128177</a>, [@grafana-writer[bot]](<a href="https://github.com/grafana-writer[bot">https://github.com/grafana-writer[bot</a></li>
-<li><strong>Provisioning:</strong> make sync per-resource write timeout configurable <a href="https://github.com/grafana/grafana/pull/127868">#127868</a>, [@grafana-writer[bot]](<a href="https://github.com/grafana-writer[bot">https://github.com/grafana-writer[bot</a></li>
-</ul>
-<h3>Bug fixes</h3>
-<ul>
-<li><strong>Accessibility:</strong> Ensure <code>InlineToast</code> contents are announced by screenreaders <a href="https://github.com/grafana/grafana/pull/128687">#128687</a>, [@grafana-writer[bot]](<a href="https://github.com/grafana-writer[bot">https://github.com/grafana-writer[bot</a></li>
-<li><strong>DashboardDS:</strong> Fix chained dashboard datasource panels showing stale data <a href="https://github.com/grafana/grafana/pull/127248">#127248</a>, [@grafana-writer[bot]](<a href="https://github.com/grafana-writer[bot">https://github.com/grafana-writer[bot</a></li>
-<li><strong>Provisioning:</strong> make GitHub webhook creation idempotent (fix repos stuck unhealthy with HTTP 422) <a href="https://github.com/grafana/grafana/pull/128201">#128201</a>, <a href="https://github.com/floriecai">@floriecai</a></li>
-</ul>
-<h3>Plugin development fixes &amp; changes</h3>
-<ul>
-<li><strong>Pagination:</strong> Set <code>aria-current</code> on active page <a href="https://github.com/grafana/grafana/pull/128518">#128518</a>, [@grafana-writer[bot]](<a href="https://github.com/grafana-writer[bot">https://github.com/grafana-writer[bot</a></li>
-</ul>]]></description>
-  </item>
-
-  <item>
-    <title>Warpstream Agent — WarpStream Agent v824</title>
-    <link>https://docs.warpstream.com/warpstream/overview/change-log#release-v824</link>
-    <guid isPermaLink="true">https://docs.warpstream.com/warpstream/overview/change-log#release-v824</guid>
-    <pubDate>Wed, 22 Jul 2026 20:55:14 GMT</pubDate>
-    <category>streaming</category>
-    <category>backend</category>
-    <description><![CDATA[<ul><li>Managed Data Pipelines: when the number of pipelines Agents changes, scale pipeline instance concurrency up or down instead of stopping and restarting all pipelines.</li><li>Fix a throughput bottleneck during Orbit auto-migration `PROXY`.</li></ul>]]></description>
   </item>
   </channel>
 </rss>
